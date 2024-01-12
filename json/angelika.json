@@ -1,0 +1,618 @@
+{
+    "data": {
+      "theaterShowtimeGroupings": {
+        "theaterId": "Al2f6XiGOIkVTp4",
+        "displayDates": [
+          "2024-01-01",
+          "2024-01-02",
+          "2024-01-03",
+          "2024-01-04",
+          "2024-01-16",
+          "2024-01-17",
+          "2024-01-18",
+          "2024-01-19",
+          "2024-01-20",
+          "2024-01-21",
+          "2024-01-22",
+          "2024-01-23",
+          "2024-01-24",
+          "2024-01-25",
+          "2024-01-26",
+          "2024-01-27",
+          "2024-01-28",
+          "2024-01-29",
+          "2024-01-30",
+          "2024-01-31",
+          "2024-02-01",
+          "2024-02-14",
+          "2024-02-15",
+          "2024-02-16",
+          "2024-02-17",
+          "2024-02-18",
+          "2024-02-19",
+          "2024-02-20",
+          "2024-02-21",
+          "2024-02-22"
+        ],
+        "displayDate": "2024-01-02",
+        "mppBaseUrl": "https://www.flixster.com/switchboard/internal-checkout?mid={mid}&tid={tid}&a={a}&date={sdate}&datetime={sdate}",
+        "movies": [
+          {
+            "fandangoId": "232907",
+            "emsId": "8f7ba669-b488-470c-be54-3755db445627",
+            "emsVersionId": "d62fe9cb-6c73-492f-903b-fbff88c70436",
+            "name": "All of Us Strangers",
+            "durationMinutes": 105,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 94,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 91,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "R",
+              "description": "Restricted"
+            },
+            "releaseDate": "2023-12-22",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/EUhdu3KAXoYTWn0Cq4uGQxmNSSs=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzhkZjA4ZWM0LThkMGMtNDc0My1hMTYyLTVkNzAwNDFjNmNhMS5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "232907",
+                "movieVariantId": "y4zadlQ3",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "No passes",
+                        "id": "25gyyv74",
+                        "shortDescription": "Vouchers and coupons for free or discounted admission cannot be used for this showing. Refer to your pass for details."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "ZkEKe63R",
+                        "shortDescription": "Descriptive Audio devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "ElJGW1Z4",
+                        "type": "Available",
+                        "providerTime": "10:25:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+10:25"
+                      },
+                      {
+                        "id": "7L2mqjXv",
+                        "type": "Available",
+                        "providerTime": "11:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+11:45"
+                      },
+                      {
+                        "id": "E2xgZGVn",
+                        "type": "Available",
+                        "providerTime": "13:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+13:00"
+                      },
+                      {
+                        "id": "3BqmgKyA",
+                        "type": "Available",
+                        "providerTime": "14:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:15"
+                      },
+                      {
+                        "id": "5pmGX1a6",
+                        "type": "Available",
+                        "providerTime": "15:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+15:30"
+                      },
+                      {
+                        "id": "58QldmZZ",
+                        "type": "Available",
+                        "providerTime": "16:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+16:45"
+                      },
+                      {
+                        "id": "EryGW1wD",
+                        "type": "Available",
+                        "providerTime": "19:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+19:15"
+                      },
+                      {
+                        "id": "3PdegMmR",
+                        "type": "Available",
+                        "providerTime": "20:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+20:30"
+                      },
+                      {
+                        "id": "56yvdmpO",
+                        "type": "Available",
+                        "providerTime": "21:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+21:45"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "No passes",
+                        "id": "25gyyv74",
+                        "shortDescription": "Vouchers and coupons for free or discounted admission cannot be used for this showing. Refer to your pass for details."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7nkGNlRL",
+                        "type": "Available",
+                        "providerTime": "18:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+18:00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "232613",
+            "emsId": "cb28c837-b943-4ed8-9e4a-b1db47fcc59a",
+            "emsVersionId": "69b687b4-1022-47e2-ac31-5d6dfb75b6ff",
+            "name": "American Fiction",
+            "durationMinutes": 117,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 92,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 97,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "R",
+              "description": "Restricted"
+            },
+            "releaseDate": "2023-12-15",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/Kes35WjbggKb9o6T7JG1nBGE2RE=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2M4ODA3YzJjLTA5YWItNDFhZi1hNDc5LTc0MWU0NWMxYTU3ZS5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "232613",
+                "movieVariantId": "V4LW9bz3",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "No passes",
+                        "id": "25gyyv74",
+                        "shortDescription": "Vouchers and coupons for free or discounted admission cannot be used for this showing. Refer to your pass for details."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "ZkEKe63R",
+                        "shortDescription": "Descriptive Audio devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "Evq2DRy2",
+                        "type": "Available",
+                        "providerTime": "10:20:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+10:20"
+                      },
+                      {
+                        "id": "5QwmjlKa",
+                        "type": "Available",
+                        "providerTime": "11:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+11:30"
+                      },
+                      {
+                        "id": "7Vgm84q4",
+                        "type": "Available",
+                        "providerTime": "14:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:15"
+                      },
+                      {
+                        "id": "EMlmgQMM",
+                        "type": "Available",
+                        "providerTime": "15:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+15:45"
+                      },
+                      {
+                        "id": "EMlmgQAM",
+                        "type": "Available",
+                        "providerTime": "19:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+19:45"
+                      },
+                      {
+                        "id": "ElJGW1pg",
+                        "type": "Available",
+                        "providerTime": "21:10:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+21:10"
+                      },
+                      {
+                        "id": "ElJGW1gg",
+                        "type": "Available",
+                        "providerTime": "22:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+22:30"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "No passes",
+                        "id": "25gyyv74",
+                        "shortDescription": "Vouchers and coupons for free or discounted admission cannot be used for this showing. Refer to your pass for details."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "Evq2DRx2",
+                        "type": "Available",
+                        "providerTime": "17:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+17:00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "231849",
+            "emsId": "865b81a4-aa57-4f52-b248-93d5cf3d7fe9",
+            "emsVersionId": "079e3bec-cb81-4e64-876e-ab823cbbf0da",
+            "name": "The Zone of Interest",
+            "durationMinutes": 106,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 92,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "na",
+              "dtlLikedScore": null,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/95fe6210-9be3-11eb-954b-43250906bea9--green-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG-13",
+              "description": "Parents Strongly Cautioned"
+            },
+            "releaseDate": "2023-12-15",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/sK_6rOkR73t2sfxWzzu1MJY4e-E=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2RkMDcxNjExLWY2OGYtNGJlNS04OTNjLTdhNDA3OGIzZjA1NC5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "231849",
+                "movieVariantId": "VN6wRO93",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "No passes",
+                        "id": "25gyyv74",
+                        "shortDescription": "Vouchers and coupons for free or discounted admission cannot be used for this showing. Refer to your pass for details."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "ZkEKe63R",
+                        "shortDescription": "Descriptive Audio devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "3Ge2lr2o",
+                        "type": "Available",
+                        "providerTime": "10:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+10:00"
+                      },
+                      {
+                        "id": "7oOGX1Gv",
+                        "type": "Available",
+                        "providerTime": "12:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+12:30"
+                      },
+                      {
+                        "id": "EerGe1Lj",
+                        "type": "Available",
+                        "providerTime": "13:10:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+13:10"
+                      },
+                      {
+                        "id": "EWpGVbGz",
+                        "type": "Available",
+                        "providerTime": "15:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+15:00"
+                      },
+                      {
+                        "id": "E2xgZGg6",
+                        "type": "Available",
+                        "providerTime": "17:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+17:30"
+                      },
+                      {
+                        "id": "59kpWmZk",
+                        "type": "Available",
+                        "providerTime": "18:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+18:30"
+                      },
+                      {
+                        "id": "E1JNVoNy",
+                        "type": "Available",
+                        "providerTime": "20:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+20:00"
+                      },
+                      {
+                        "id": "EdmG41GV",
+                        "type": "Available",
+                        "providerTime": "22:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+22:30"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "233654",
+            "emsId": "2ead0e0d-859e-4c5f-9d0f-0a6c647b22fc",
+            "emsVersionId": "54715670-0484-404e-bc9f-2d4e0cf2ed03",
+            "name": "The Teachers' Lounge",
+            "durationMinutes": 94,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 98,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "green",
+              "dtlLikedScore": 25,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/95fe6210-9be3-11eb-954b-43250906bea9--green-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG-13",
+              "description": "Parents Strongly Cautioned"
+            },
+            "releaseDate": "2023-12-25",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/PFXs0vyFXqtVFs2Ice1FfoXh2i4=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzM5YTQwZGI2LTEzOWEtNDY3ZC05N2JjLTY0YWI4NzM4ZDU1Ny5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "233654",
+                "movieVariantId": "b4ggObj4",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "No passes",
+                        "id": "25gyyv74",
+                        "shortDescription": "Vouchers and coupons for free or discounted admission cannot be used for this showing. Refer to your pass for details."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "ZkEKe63R",
+                        "shortDescription": "Descriptive Audio devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7oOGX1bB",
+                        "type": "Available",
+                        "providerTime": "11:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+11:30"
+                      },
+                      {
+                        "id": "EWpGVbyM",
+                        "type": "Available",
+                        "providerTime": "14:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:00"
+                      },
+                      {
+                        "id": "E1JNVoz4",
+                        "type": "Available",
+                        "providerTime": "19:05:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+19:05"
+                      },
+                      {
+                        "id": "EdmG41jn",
+                        "type": "Available",
+                        "providerTime": "21:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+21:30"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "No passes",
+                        "id": "25gyyv74",
+                        "shortDescription": "Vouchers and coupons for free or discounted admission cannot be used for this showing. Refer to your pass for details."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "E2xgZGDB",
+                        "type": "Available",
+                        "providerTime": "16:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+16:30"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }

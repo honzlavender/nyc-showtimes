@@ -1,0 +1,1968 @@
+{
+    "data": {
+      "theaterShowtimeGroupings": {
+        "theaterId": "r89fOVfAmuGnTdL",
+        "displayDates": [
+          "2024-01-01",
+          "2024-01-02",
+          "2024-01-03",
+          "2024-01-04",
+          "2024-01-05",
+          "2024-01-06",
+          "2024-01-07",
+          "2024-01-08",
+          "2024-01-09",
+          "2024-01-10",
+          "2024-01-11",
+          "2024-01-12",
+          "2024-01-13",
+          "2024-01-14",
+          "2024-01-15",
+          "2024-01-16",
+          "2024-01-17",
+          "2024-01-18",
+          "2024-01-19",
+          "2024-01-20",
+          "2024-01-21",
+          "2024-01-22",
+          "2024-01-23",
+          "2024-01-24",
+          "2024-01-25",
+          "2024-02-07",
+          "2024-02-08",
+          "2024-02-11",
+          "2024-02-21",
+          "2024-02-22"
+        ],
+        "displayDate": "2024-01-02",
+        "mppBaseUrl": "https://www.flixster.com/switchboard/internal-checkout?mid={mid}&tid={tid}&a={a}&date={sdate}&datetime={sdate}",
+        "movies": [
+          {
+            "fandangoId": "233043",
+            "emsId": "fdffd8a0-f466-3124-8faf-8a8ceb228ac0",
+            "emsVersionId": "7eff074c-81e7-338b-889d-dae1541715c2",
+            "name": "Ferrari",
+            "durationMinutes": 130,
+            "tomatoRating": {
+              "state": "fresh",
+              "tomatometer": 73,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/7928a380-9be3-11eb-954b-43250906bea9--fresh.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 72,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "R",
+              "description": "Restricted"
+            },
+            "releaseDate": "2023-12-25",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/i9CeWWf69GItCAWYaYws0z92NSs=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzFiM2FmYWMxLWIyMDEtNDQ3OC04YjU4LWYxNDg4N2MyOWI0YS5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "233043",
+                "movieVariantId": "D5KA7903",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7L2Po4ao",
+                        "type": "Available",
+                        "providerTime": "10:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+10:45"
+                      },
+                      {
+                        "id": "58QywzY9",
+                        "type": "Available",
+                        "providerTime": "13:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+13:45"
+                      },
+                      {
+                        "id": "5OG42YaW",
+                        "type": "Available",
+                        "providerTime": "16:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+16:45"
+                      },
+                      {
+                        "id": "EkKajdk4",
+                        "type": "Available",
+                        "providerTime": "22:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+22:45"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "3BqXok26",
+                        "type": "Available",
+                        "providerTime": "19:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+19:45"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "232146",
+            "emsId": "972bffa4-cb57-3fd0-9b29-4f694277b2b4",
+            "emsVersionId": "10e420ce-1078-3f5f-aa05-cf8e712a9a88",
+            "name": "The Boys in the Boat",
+            "durationMinutes": 124,
+            "tomatoRating": {
+              "state": "rotten",
+              "tomatometer": 57,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/7d9d62c0-9be3-11eb-bd50-d166e33e886a--rotten.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 96,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG-13",
+              "description": "Parents Strongly Cautioned"
+            },
+            "releaseDate": "2023-12-25",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/F4ZQOz5WR87qrns9gaJut6KEXXU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzkzZWJlNDczLWM2N2YtNGE2Yi1hOTEwLTNhYThiNTE4ZmJmYi5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "232146",
+                "movieVariantId": "L470OM05",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "Edm1lnVn",
+                        "type": "Available",
+                        "providerTime": "10:20:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+10:20"
+                      },
+                      {
+                        "id": "EWpbLnKM",
+                        "type": "Available",
+                        "providerTime": "13:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+13:15"
+                      },
+                      {
+                        "id": "E1Jo96B4",
+                        "type": "Available",
+                        "providerTime": "16:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+16:15"
+                      },
+                      {
+                        "id": "E2xG9X8B",
+                        "type": "Available",
+                        "providerTime": "22:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+22:15"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7yBOjmwM",
+                        "type": "Available",
+                        "providerTime": "19:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+19:15"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "232040",
+            "emsId": "83f24236-db29-3bcd-8001-658fd8e463fc",
+            "emsVersionId": "ff340cca-137d-39b5-83ce-8f3f4863e182",
+            "name": "The Color Purple",
+            "durationMinutes": 140,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 87,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 95,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG-13",
+              "description": "Parents Strongly Cautioned"
+            },
+            "releaseDate": "2023-12-25",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/_8mqDG_CFMbH75r18jov-puBBzA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZiMzNiZmJiLTk1ODItNDBhMi05M2Y1LTJmMjJkNzUwNzJiYy5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "232040",
+                "movieVariantId": "O52GQD0N",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "3AN6dVK0",
+                        "type": "Available",
+                        "providerTime": "10:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+10:00"
+                      },
+                      {
+                        "id": "Edm1JpZn",
+                        "type": "Available",
+                        "providerTime": "11:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+11:30"
+                      },
+                      {
+                        "id": "7qxLPmVG",
+                        "type": "Available",
+                        "providerTime": "13:10:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+13:10"
+                      },
+                      {
+                        "id": "E1Jogrk4",
+                        "type": "Available",
+                        "providerTime": "14:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:45"
+                      },
+                      {
+                        "id": "EerpVlkg",
+                        "type": "Available",
+                        "providerTime": "16:20:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+16:20"
+                      },
+                      {
+                        "id": "EWpb0BdM",
+                        "type": "Available",
+                        "providerTime": "18:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+18:00"
+                      },
+                      {
+                        "id": "E2xGQ6OB",
+                        "type": "Available",
+                        "providerTime": "21:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+21:15"
+                      },
+                      {
+                        "id": "7nk0eDgw",
+                        "type": "Available",
+                        "providerTime": "22:40:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+22:40"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "59kR68DZ",
+                        "type": "Available",
+                        "providerTime": "19:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+19:30"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Dolby Cinema @ AMC",
+                        "id": "RV54GAE1",
+                        "shortDescription": "Dolby Cinema at AMC turns your movie into a state-of-the-art cinematic event. A million-to-one contrast ratio and ultra-vivid colors transform your viewing experience. Moving audio technology moves sound around in a 3D space, even above you. Spacious, reserved seats reverberate with the action."
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "5OGvYoDo",
+                        "type": "Available",
+                        "providerTime": "18:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+18:30"
+                      },
+                      {
+                        "id": "59kmJv6R",
+                        "type": "Available",
+                        "providerTime": "21:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+21:45"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "232480",
+            "emsId": "0b0585a0-d887-33ff-baba-0c39ef39a38c",
+            "emsVersionId": "8a075eee-4061-3085-a877-492821fee685",
+            "name": "Anyone But You",
+            "durationMinutes": 103,
+            "tomatoRating": {
+              "state": "rotten",
+              "tomatometer": 54,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/7d9d62c0-9be3-11eb-bd50-d166e33e886a--rotten.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 86,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "R",
+              "description": "Restricted"
+            },
+            "releaseDate": "2023-12-22",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/JdMayYRDBiWLQAcfMSIhgpddN20=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzNkNTI4ODdiLTAyYTQtNGMxYS1hNGEwLTYzNDMwM2JjZDIwYi5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "232480",
+                "movieVariantId": "M3ldvVP3",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7qx1La4W",
+                        "type": "Available",
+                        "providerTime": "10:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+10:00"
+                      },
+                      {
+                        "id": "Eer1pnNb",
+                        "type": "Available",
+                        "providerTime": "12:35:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+12:35"
+                      },
+                      {
+                        "id": "59kmRMr6",
+                        "type": "Available",
+                        "providerTime": "15:10:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+15:10"
+                      },
+                      {
+                        "id": "7nk10dPl",
+                        "type": "Available",
+                        "providerTime": "17:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+17:45"
+                      },
+                      {
+                        "id": "3GerV6xw",
+                        "type": "Available",
+                        "providerTime": "22:55:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+22:55"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "5wP0NJYW",
+                        "type": "Available",
+                        "providerTime": "20:20:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+20:20"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "226755",
+            "emsId": "7fe58e79-97ca-3890-aced-4c7d5da87ab1",
+            "emsVersionId": "c14d4ef3-ce02-3c36-aa87-7cc8279ac44d",
+            "name": "Aquaman and the Lost Kingdom",
+            "durationMinutes": 124,
+            "tomatoRating": {
+              "state": "rotten",
+              "tomatometer": 35,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/7d9d62c0-9be3-11eb-bd50-d166e33e886a--rotten.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 81,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG-13",
+              "description": "Parents Strongly Cautioned"
+            },
+            "releaseDate": "2023-12-22",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/ioQtD3b6hKJON0J4_7S-Wp0Ss5M=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzczNzQ3NjczLTE3MWMtNGJlYi1hODUwLTNkMmU5MGYxYjJiNy5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "Z65OQ7lJ",
+                "mid": "234254",
+                "movieVariantId": "b4ggOVo4",
+                "formatName": "Digital 3D",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "RealD 3D",
+                        "id": "r456QLE8",
+                        "shortDescription": "RealD is the most widely used digital 3D cinema technology."
+                      },
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7yBjwZWp",
+                        "type": "Available",
+                        "providerTime": "11:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+11:00"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "226755",
+                "movieVariantId": "G4rGAPz5",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "E0NnLzRV",
+                        "type": "Available",
+                        "providerTime": "14:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:00"
+                      },
+                      {
+                        "id": "EdmlVybd",
+                        "type": "Available",
+                        "providerTime": "17:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+17:00"
+                      },
+                      {
+                        "id": "5RzyWZrO",
+                        "type": "Available",
+                        "providerTime": "23:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+23:00"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "EKXpqQRy",
+                        "type": "Available",
+                        "providerTime": "20:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+20:00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "231644",
+            "emsId": "ed3f9fd3-986f-3fd5-b51b-0ecfe4b97894",
+            "emsVersionId": "a5199f12-8c31-31e7-804f-8cdd88a35aa8",
+            "name": "Migration",
+            "durationMinutes": 92,
+            "tomatoRating": {
+              "state": "fresh",
+              "tomatometer": 72,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/7928a380-9be3-11eb-954b-43250906bea9--fresh.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 87,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG",
+              "description": "Parental Guidance Suggested"
+            },
+            "releaseDate": "2023-12-22",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/PaF2nohEOe1U4u8uP_tFCOj1ciE=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQyZjYzYzk0LTBjZmMtNGMxZi04ZjQ1LTZiNzBhNmRiOTk4MS5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "Z65OQ7lJ",
+                "mid": "234083",
+                "movieVariantId": "z3eGq0V5",
+                "formatName": "Digital 3D",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "RealD 3D",
+                        "id": "r456QLE8",
+                        "shortDescription": "RealD is the most widely used digital 3D cinema technology."
+                      },
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "5DQgo8gL",
+                        "type": "Available",
+                        "providerTime": "10:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+10:00"
+                      },
+                      {
+                        "id": "3AN6oR6m",
+                        "type": "Available",
+                        "providerTime": "21:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+21:45"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "231644",
+                "movieVariantId": "r5ZOpGGN",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7qxLpNLz",
+                        "type": "Available",
+                        "providerTime": "12:20:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+12:20"
+                      },
+                      {
+                        "id": "EJPloplm",
+                        "type": "Available",
+                        "providerTime": "14:40:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:40"
+                      },
+                      {
+                        "id": "EYP8oB8y",
+                        "type": "Available",
+                        "providerTime": "17:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+17:00"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "5mMRVkRj",
+                        "type": "Available",
+                        "providerTime": "19:20:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+19:20"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Dolby Cinema @ AMC",
+                        "id": "RV54GAE1",
+                        "shortDescription": "Dolby Cinema at AMC turns your movie into a state-of-the-art cinematic event. A million-to-one contrast ratio and ultra-vivid colors transform your viewing experience. Moving audio technology moves sound around in a 3D space, even above you. Spacious, reserved seats reverberate with the action."
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "5mMRb6mM",
+                        "type": "Available",
+                        "providerTime": "11:20:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+11:20"
+                      },
+                      {
+                        "id": "3AN6xOy4",
+                        "type": "Available",
+                        "providerTime": "13:40:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+13:40"
+                      },
+                      {
+                        "id": "EkK1dzq8",
+                        "type": "Available",
+                        "providerTime": "16:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+16:00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "233863",
+            "emsId": "15735db5-6100-3e9a-93bb-ffd052c723c7",
+            "emsVersionId": "8fca531f-c496-3228-aefd-ea91d8947d74",
+            "name": "The Iron Claw",
+            "durationMinutes": 130,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 89,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 93,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "R",
+              "description": "Restricted"
+            },
+            "releaseDate": "2023-12-22",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/TK5WOxtD8WKRZxbd16PIXJhBW7E=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRkMTA0NDE3LTM2MGEtNDAyYi05MTNjLTI2NTc5MTJkMjg2NC5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "233863",
+                "movieVariantId": "jNDB2AY4",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "58QmJA0k",
+                        "type": "Available",
+                        "providerTime": "19:50:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+19:50"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7NwVKWX2",
+                        "type": "Available",
+                        "providerTime": "10:50:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+10:50"
+                      },
+                      {
+                        "id": "EXPap164",
+                        "type": "Available",
+                        "providerTime": "13:50:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+13:50"
+                      },
+                      {
+                        "id": "56ymDY28",
+                        "type": "Available",
+                        "providerTime": "16:50:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+16:50"
+                      },
+                      {
+                        "id": "Ery1KM8R",
+                        "type": "Available",
+                        "providerTime": "22:50:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+22:50"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "232478",
+            "emsId": "25ad8783-00db-3060-9a99-c7b8f94d8fb5",
+            "emsVersionId": "0b990002-9ffe-3706-919e-da57869defc0",
+            "name": "Wonka",
+            "durationMinutes": 116,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 83,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 91,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG",
+              "description": "Parental Guidance Suggested"
+            },
+            "releaseDate": "2023-12-15",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/Bx2OFTZyXMQCB30_E6EmiA52wZo=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2ZiMzI0ODJhLTZmNzYtNDNkZC04MjdhLTBlODVhOTgzNzQ2Zi5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "zq5Rk3ex",
+                "mid": "233526",
+                "movieVariantId": "x4WwMm24",
+                "formatName": "IMAX",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "IMAX Laser",
+                        "id": "B13Pz9E0",
+                        "shortDescription": "IMAX with laser represents a quantum leap in cinema technology – providing audiences with the sharpest, brightest, clearest and most vivid digital images ever, combined with a whole new level of immersive audio."
+                      },
+                      {
+                        "name": "IMAX",
+                        "id": "BKE0rl3x",
+                        "shortDescription": "IMAX® digital projection uses dual projectors with sub-pixel alignment to produce clear, high contrast images, with powerful, laser-aligned digital sound and customized theatre geometry, creating the world's most immersive digital movie experience."
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "3BqKkapO",
+                        "type": "Available",
+                        "providerTime": "11:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+11:30"
+                      },
+                      {
+                        "id": "58QmzVpo",
+                        "type": "Available",
+                        "providerTime": "14:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:15"
+                      },
+                      {
+                        "id": "Ery1je6X",
+                        "type": "Available",
+                        "providerTime": "17:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+17:00"
+                      },
+                      {
+                        "id": "56ymxjZw",
+                        "type": "Available",
+                        "providerTime": "19:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+19:45"
+                      },
+                      {
+                        "id": "EXPaO8qB",
+                        "type": "Available",
+                        "providerTime": "22:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+22:30"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "232478",
+                "movieVariantId": "m3VwLzq4",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "EJPlXpMR",
+                        "type": "Available",
+                        "providerTime": "10:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+10:15"
+                      },
+                      {
+                        "id": "EYP8aBqe",
+                        "type": "Available",
+                        "providerTime": "13:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+13:00"
+                      },
+                      {
+                        "id": "5mMRNkQr",
+                        "type": "Available",
+                        "providerTime": "15:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+15:45"
+                      },
+                      {
+                        "id": "7qxLVNlW",
+                        "type": "Available",
+                        "providerTime": "21:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+21:15"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "3AN6KRrq",
+                        "type": "Available",
+                        "providerTime": "18:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+18:30"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "231939",
+            "emsId": "4459a1b8-ec4a-4c13-8c31-b27464e1c6e2",
+            "emsVersionId": "83c14919-c7b2-42f1-abbe-c8cce22cede2",
+            "name": "Poor Things",
+            "durationMinutes": 141,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 93,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 81,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "R",
+              "description": "Restricted"
+            },
+            "releaseDate": "2023-12-08",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/U_RT77J5o2EfMC-DdAc7Dm8CkKY=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzNmM2FiYmJhLTFjYTgtNDljOC04MjQ4LTU1Yjg0M2NkNTdmZC5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "231939",
+                "movieVariantId": "z3eGpMj5",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "EYPzBrjK",
+                        "type": "Available",
+                        "providerTime": "11:45:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+11:45"
+                      },
+                      {
+                        "id": "5jn12aQo",
+                        "type": "Available",
+                        "providerTime": "13:25:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+13:25"
+                      },
+                      {
+                        "id": "EJPNpeYK",
+                        "type": "Available",
+                        "providerTime": "15:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+15:00"
+                      },
+                      {
+                        "id": "5DQL8DY0",
+                        "type": "Available",
+                        "providerTime": "21:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+21:30"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Open caption",
+                        "id": "XKEk247k",
+                        "shortDescription": "Open captioning superimposes a movie's dialogue and sound effects onto the screen as text. Unlike closed-captioning, there are no black boxes surrounding the text."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "3z6LYRpz",
+                        "type": "Available",
+                        "providerTime": "18:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+18:15"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "232532",
+            "emsId": "b1cf2928-9bb0-33d9-a1fd-1768080e5ab0",
+            "emsVersionId": "f3b2f8fb-5fd6-3159-8f59-cc663f3ad089",
+            "name": "The Boy and the Heron",
+            "durationMinutes": 124,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 96,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 89,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG-13",
+              "description": "Parents Strongly Cautioned"
+            },
+            "releaseDate": "2023-11-22",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/Hk9p4GGqf6TNJ0f8TtJxTqjH5vA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzU3MTE5MDA5LWY0MjEtNDgyYi04OThmLTU4NDNlYTFjZDk0NC5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "232532",
+                "movieVariantId": "aNkxveJ3",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      },
+                      {
+                        "name": "Japanese with English Subtitles",
+                        "id": "NJEXGb7X",
+                        "shortDescription": "Film spoken in Japanese with English subtitles."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "Ery1jeoZ",
+                        "type": "Available",
+                        "providerTime": "19:35:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+19:35"
+                      }
+                    ]
+                  },
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "English Dubbed",
+                        "id": "oO7NPD5w",
+                        "shortDescription": "This film is dubbed in English."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "E2xGQ6BN",
+                        "type": "Available",
+                        "providerTime": "22:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+22:00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "233115",
+            "emsId": "90c22bee-a1dd-44f6-8345-d1792b4dddc3",
+            "emsVersionId": "27614b2e-8b2e-4720-beb9-7f12a1584a32",
+            "name": "Godzilla Minus One",
+            "durationMinutes": 125,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 98,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 98,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG-13",
+              "description": "Parents Strongly Cautioned"
+            },
+            "releaseDate": "2023-12-01",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/CDYB6aGzmamA9BCmveGRQ880KRs=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzk5MmIwMzZiLWU2ZGMtNDU4NC04YTYxLTA3YmRlMDVkYjI3YS5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "233115",
+                "movieVariantId": "k3ygvOW5",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      },
+                      {
+                        "name": "Japanese with English Subtitles",
+                        "id": "NJEXGb7X",
+                        "shortDescription": "Film spoken in Japanese with English subtitles."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7NwVDG0N",
+                        "type": "Available",
+                        "providerTime": "10:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+10:30"
+                      },
+                      {
+                        "id": "EXPaO8gP",
+                        "type": "Available",
+                        "providerTime": "16:40:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+16:40"
+                      },
+                      {
+                        "id": "EXPaO8gv",
+                        "type": "Available",
+                        "providerTime": "22:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+22:30"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "233638",
+            "emsId": "d9367afb-68ea-3843-bb09-0fa5a9941e7f",
+            "emsVersionId": "0db9c118-6c14-3503-aa97-d45ca03b9499",
+            "name": "RENAISSANCE: A FILM BY BEYONCÉ",
+            "durationMinutes": 168,
+            "tomatoRating": {
+              "state": "fresh",
+              "tomatometer": 97,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/7928a380-9be3-11eb-954b-43250906bea9--fresh.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 99,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": null,
+            "releaseDate": "2023-12-01",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/WkS7Z1GuRmMlpUzEK0TyqRdi830=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2U0Njc2YzU1LTQ0NDItNDVlYS1hZDdkLTYzOGQ2ODQyYTQyZi5wbmc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "233638",
+                "movieVariantId": "PNYdA0G5",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "No Refunds or Exchanges",
+                        "id": "zB7Vxv5L",
+                        "shortDescription": "Tickets cannot be refunded or exchanged for this film, event, or concert."
+                      },
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "No passes",
+                        "id": "25gyyv74",
+                        "shortDescription": "Vouchers and coupons for free or discounted admission cannot be used for this showing. Refer to your pass for details."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      },
+                      {
+                        "name": "Special Event",
+                        "id": "Gk5jro5X",
+                        "shortDescription": "This is a special event presentation."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7oO18m4g",
+                        "type": "Available",
+                        "providerTime": "14:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:30"
+                      },
+                      {
+                        "id": "3Gerjm9B",
+                        "type": "Available",
+                        "providerTime": "18:15:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+18:15"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "228194",
+            "emsId": "79e469fc-8455-3efb-947a-9c00eb69ab0b",
+            "emsVersionId": "0d2695d4-0f67-3b51-97c4-7cd8241c61ca",
+            "name": "The Hunger Games: The Ballad of Songbirds & Snakes",
+            "durationMinutes": 157,
+            "tomatoRating": {
+              "state": "fresh",
+              "tomatometer": 64,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/7928a380-9be3-11eb-954b-43250906bea9--fresh.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 89,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG-13",
+              "description": "Parents Strongly Cautioned"
+            },
+            "releaseDate": "2023-11-17",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/cli2xj07iMBQ-KDgwpiVxGPlt0I=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2I4MDI3YjY5LTY1OGEtNDgzYi1iMzIxLWE1MWRkMTdlMzU1Ni5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "228194",
+                "movieVariantId": "A3JW6Rk4",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Laser at AMC",
+                        "id": "XA598REz",
+                        "shortDescription": "Experience movies with even more brilliant brightness, dynamic detail, and crystal-clear contrast with Laser at AMC. It’s a new era in cinema quality!"
+                      },
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "Closed caption",
+                        "id": "Z25gaM74",
+                        "shortDescription": "Closed Captioning devices display a movie's dialogue and sound effects as text; captions are not shown on the main screen.  Devices available by request."
+                      },
+                      {
+                        "name": "Accessibility devices available",
+                        "id": "Y6EY9NEL",
+                        "shortDescription": "Descriptive Video devices provide audio descriptions of the movie to accommodate the needs of visually impaired guests. Devices available by request."
+                      },
+                      {
+                        "name": "Recliner Seats",
+                        "id": "wa3BXgEW",
+                        "shortDescription": "Kick back in an extra-comfy recliner and enjoy the show."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "EWpb0BxJ",
+                        "type": "Available",
+                        "providerTime": "11:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+11:00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }

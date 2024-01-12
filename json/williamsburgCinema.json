@@ -1,0 +1,620 @@
+{
+    "data": {
+      "theaterShowtimeGroupings": {
+        "theaterId": "9XbfBRfMDS1Wswz",
+        "displayDates": [
+          "2024-01-01",
+          "2024-01-02",
+          "2024-01-03",
+          "2024-01-04",
+          "2024-01-05",
+          "2024-01-06",
+          "2024-01-07",
+          "2024-01-08",
+          "2024-01-09",
+          "2024-01-10",
+          "2024-01-11",
+          "2024-01-12",
+          "2024-01-13",
+          "2024-01-14",
+          "2024-01-15",
+          "2024-01-16",
+          "2024-01-17",
+          "2024-01-18"
+        ],
+        "displayDate": "2024-01-02",
+        "mppBaseUrl": "https://www.flixster.com/switchboard/internal-checkout?mid={mid}&tid={tid}&a={a}&date={sdate}&datetime={sdate}",
+        "movies": [
+          {
+            "fandangoId": "232040",
+            "emsId": "83f24236-db29-3bcd-8001-658fd8e463fc",
+            "emsVersionId": "ff340cca-137d-39b5-83ce-8f3f4863e182",
+            "name": "The Color Purple",
+            "durationMinutes": 140,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 87,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 95,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG-13",
+              "description": "Parents Strongly Cautioned"
+            },
+            "releaseDate": "2023-12-25",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/_8mqDG_CFMbH75r18jov-puBBzA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzZiMzNiZmJiLTk1ODItNDBhMi05M2Y1LTJmMjJkNzUwNzJiYy5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "232040",
+                "movieVariantId": "O52GQD0N",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "EMlmglMM",
+                        "type": "Available",
+                        "providerTime": "14:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:00"
+                      },
+                      {
+                        "id": "Evq2Dqy2",
+                        "type": "Available",
+                        "providerTime": "17:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+17:00"
+                      },
+                      {
+                        "id": "7Vgm8gz4",
+                        "type": "Available",
+                        "providerTime": "20:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+20:00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "226755",
+            "emsId": "7fe58e79-97ca-3890-aced-4c7d5da87ab1",
+            "emsVersionId": "c14d4ef3-ce02-3c36-aa87-7cc8279ac44d",
+            "name": "Aquaman and the Lost Kingdom",
+            "durationMinutes": 124,
+            "tomatoRating": {
+              "state": "rotten",
+              "tomatometer": 35,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/7d9d62c0-9be3-11eb-bd50-d166e33e886a--rotten.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 81,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG-13",
+              "description": "Parents Strongly Cautioned"
+            },
+            "releaseDate": "2023-12-22",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/ioQtD3b6hKJON0J4_7S-Wp0Ss5M=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzczNzQ3NjczLTE3MWMtNGJlYi1hODUwLTNkMmU5MGYxYjJiNy5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "226755",
+                "movieVariantId": "G4rGAPz5",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "EbpWLp6R",
+                        "type": "Available",
+                        "providerTime": "14:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:30"
+                      },
+                      {
+                        "id": "54JQXJZ1",
+                        "type": "Available",
+                        "providerTime": "17:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+17:30"
+                      },
+                      {
+                        "id": "ExMGDM0x",
+                        "type": "Available",
+                        "providerTime": "20:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+20:30"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "231644",
+            "emsId": "ed3f9fd3-986f-3fd5-b51b-0ecfe4b97894",
+            "emsVersionId": "a5199f12-8c31-31e7-804f-8cdd88a35aa8",
+            "name": "Migration",
+            "durationMinutes": 92,
+            "tomatoRating": {
+              "state": "fresh",
+              "tomatometer": 72,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/7928a380-9be3-11eb-954b-43250906bea9--fresh.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 87,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG",
+              "description": "Parental Guidance Suggested"
+            },
+            "releaseDate": "2023-12-22",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/PaF2nohEOe1U4u8uP_tFCOj1ciE=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQyZjYzYzk0LTBjZmMtNGMxZi04ZjQ1LTZiNzBhNmRiOTk4MS5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "231644",
+                "movieVariantId": "r5ZOpGGN",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7qxGXxMB",
+                        "type": "Available",
+                        "providerTime": "14:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:00"
+                      },
+                      {
+                        "id": "3ANDgNLR",
+                        "type": "Available",
+                        "providerTime": "16:10:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+16:10"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "233863",
+            "emsId": "15735db5-6100-3e9a-93bb-ffd052c723c7",
+            "emsVersionId": "8fca531f-c496-3228-aefd-ea91d8947d74",
+            "name": "The Iron Claw",
+            "durationMinutes": 130,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 89,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 93,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "R",
+              "description": "Restricted"
+            },
+            "releaseDate": "2023-12-22",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/TK5WOxtD8WKRZxbd16PIXJhBW7E=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzRkMTA0NDE3LTM2MGEtNDAyYi05MTNjLTI2NTc5MTJkMjg2NC5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "233863",
+                "movieVariantId": "jNDB2AY4",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "7nkGrkQm",
+                        "type": "Available",
+                        "providerTime": "14:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:30"
+                      },
+                      {
+                        "id": "59kpWkZk",
+                        "type": "Available",
+                        "providerTime": "18:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+18:00"
+                      },
+                      {
+                        "id": "EerGerLj",
+                        "type": "Available",
+                        "providerTime": "21:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+21:00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "232613",
+            "emsId": "cb28c837-b943-4ed8-9e4a-b1db47fcc59a",
+            "emsVersionId": "69b687b4-1022-47e2-ac31-5d6dfb75b6ff",
+            "name": "American Fiction",
+            "durationMinutes": 117,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 92,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 97,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "R",
+              "description": "Restricted"
+            },
+            "releaseDate": "2023-12-15",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/Kes35WjbggKb9o6T7JG1nBGE2RE=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2M4ODA3YzJjLTA5YWItNDFhZi1hNDc5LTc0MWU0NWMxYTU3ZS5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "232613",
+                "movieVariantId": "V4LW9bz3",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "5mMGWMPb",
+                        "type": "Available",
+                        "providerTime": "15:10:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+15:10"
+                      },
+                      {
+                        "id": "EYPmZPy2",
+                        "type": "Available",
+                        "providerTime": "17:50:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+17:50"
+                      },
+                      {
+                        "id": "EJPmZPQe",
+                        "type": "Available",
+                        "providerTime": "20:30:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+20:30"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "232478",
+            "emsId": "25ad8783-00db-3060-9a99-c7b8f94d8fb5",
+            "emsVersionId": "0b990002-9ffe-3706-919e-da57869defc0",
+            "name": "Wonka",
+            "durationMinutes": 116,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 83,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 91,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG",
+              "description": "Parental Guidance Suggested"
+            },
+            "releaseDate": "2023-12-15",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/Bx2OFTZyXMQCB30_E6EmiA52wZo=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2ZiMzI0ODJhLTZmNzYtNDNkZC04MjdhLTBlODVhOTgzNzQ2Zi5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "232478",
+                "movieVariantId": "m3VwLzq4",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "3PdegdPa",
+                        "type": "Available",
+                        "providerTime": "14:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:00"
+                      },
+                      {
+                        "id": "5pmGXm4w",
+                        "type": "Available",
+                        "providerTime": "17:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+17:00"
+                      },
+                      {
+                        "id": "ElJGWJpg",
+                        "type": "Available",
+                        "providerTime": "20:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+20:00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "231939",
+            "emsId": "4459a1b8-ec4a-4c13-8c31-b27464e1c6e2",
+            "emsVersionId": "83c14919-c7b2-42f1-abbe-c8cce22cede2",
+            "name": "Poor Things",
+            "durationMinutes": 141,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 93,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 81,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "R",
+              "description": "Restricted"
+            },
+            "releaseDate": "2023-12-08",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/U_RT77J5o2EfMC-DdAc7Dm8CkKY=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzNmM2FiYmJhLTFjYTgtNDljOC04MjQ4LTU1Yjg0M2NkNTdmZC5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "231939",
+                "movieVariantId": "z3eGpMj5",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "5DQmZQrK",
+                        "type": "Available",
+                        "providerTime": "14:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+14:00"
+                      },
+                      {
+                        "id": "3z6yo6OD",
+                        "type": "Available",
+                        "providerTime": "18:00:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+18:00"
+                      },
+                      {
+                        "id": "EaZGOZrk",
+                        "type": "Available",
+                        "providerTime": "21:05:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+21:05"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fandangoId": "232532",
+            "emsId": "b1cf2928-9bb0-33d9-a1fd-1768080e5ab0",
+            "emsVersionId": "f3b2f8fb-5fd6-3159-8f59-cc663f3ad089",
+            "name": "The Boy and the Heron",
+            "durationMinutes": 124,
+            "tomatoRating": {
+              "state": "certified",
+              "tomatometer": 96,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/73d962c0-9be3-11eb-8d70-c5bf5e872b28--certifiedfresh-textless.png"
+              }
+            },
+            "userRating": {
+              "state": "red",
+              "dtlLikedScore": 89,
+              "iconImage": {
+                "url": "https://images.fandango.com/cms/assets/b2570160-9be3-11eb-954b-43250906bea9--red-popcorn.png"
+              }
+            },
+            "motionPictureRating": {
+              "area": null,
+              "code": "PG-13",
+              "description": "Parents Strongly Cautioned"
+            },
+            "releaseDate": "2023-11-22",
+            "posterImage": {
+              "url": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/489x0/v2/https://resizing.flixster.com/Hk9p4GGqf6TNJ0f8TtJxTqjH5vA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzU3MTE5MDA5LWY0MjEtNDgyYi04OThmLTU4NDNlYTFjZDk0NC5qcGc="
+            },
+            "movieVariants": [
+              {
+                "formatId": "BKE0N3xn",
+                "mid": "232532",
+                "movieVariantId": "aNkxveJ3",
+                "formatName": "STANDARD",
+                "amenityGroups": [
+                  {
+                    "amenities": [
+                      {
+                        "name": "Reserved seating",
+                        "id": "O7NXXg5w",
+                        "shortDescription": "This showtime allows you to reserve your seats ahead of time."
+                      },
+                      {
+                        "name": "English Subtitles",
+                        "id": "Z25g4M34",
+                        "shortDescription": "The shows offer English subtitles"
+                      }
+                    ],
+                    "showtimes": [
+                      {
+                        "id": "5wPGDPKM",
+                        "type": "Available",
+                        "providerTime": "18:20:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+18:20"
+                      },
+                      {
+                        "id": "5ZZmMZR8",
+                        "type": "Available",
+                        "providerTime": "21:05:00",
+                        "providerDate": "2024-01-02",
+                        "isActive": true,
+                        "sdate": "01-02-2024+21:05"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
