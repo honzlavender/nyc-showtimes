@@ -7,7 +7,7 @@ import {MovieDetails} from '../hooks/useGetMovieDetails';
 import moment from 'moment';
 
 interface TheaterProps {
-  theaterInfo: TheaterInfo;
+  theaterInfo: TheaterDetails[];
   movieDetails: MovieDetails[];
   isMovieScreen: boolean;
   theaterList: TheaterDetails[];

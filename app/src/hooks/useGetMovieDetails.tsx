@@ -1,10 +1,22 @@
 import moment from 'moment';
 import {useEffect, useState} from 'react';
+import {Theater} from '../screens/Home';
 
 export interface MovieShowtimes {
+  movieName: string;
   isOpenCaption: boolean;
   providerDate: string;
   providerTime: string;
+  theaterId: string;
+}
+
+export interface TheaterDetails {
+  id: string;
+  theaterName: string;
+  hasShowtimes: boolean;
+  hasReservedSeating: boolean;
+  distance: number;
+  movieShowtimes: MovieShowtimes[];
 }
 
 export interface MovieDetails {
@@ -16,107 +28,17 @@ export interface MovieDetails {
   posterImage: string;
   movieShowtimes: MovieShowtimes[];
 }
+//actual URL to grab theater showtimes and movie data
+//const url = 'https://flixster.p.rapidapi.com/theaters/detail?id=9XbfBRfMDS1Wswz';
 
-export function extractMovieData(theaterId: string) {
-  const [movieDetails, setMovieDetails] = useState<MovieDetails[]>([]);
-  const [displayDate, setDisplayDate] = useState('');
-  const [movieShowtimes, setMovieShowtimes] = useState<MovieShowtimes[]>([]);
-
-  //actual URL to grab theater showtimes and movie data
-  //const url = 'https://flixster.p.rapidapi.com/theaters/detail?id=9XbfBRfMDS1Wswz';
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch(
-        `/Users/honzwilliams/Desktop/showtimes/json/${theaterId}.json`,
-      );
-      if (!response.ok) {
-        throw new Error('Failed to fetch data');
-      }
-      const jsonData = await response.text();
-      const parsedData = JSON.parse(jsonData);
-      const displayDate =
-        parsedData?.data?.theaterShowtimeGroupings?.displayDate || [];
-      const movies = parsedData?.data?.theaterShowtimeGroupings?.movies || [];
-      const extractedMovies = movies?.map((movie: any) => {
-        const {
-          name,
-          durationMinutes,
-          tomatoRating,
-          motionPictureRating,
-          releaseDate,
-          posterImage,
-          movieVariants,
-        } = movie;
-        const movieShowtimes: MovieShowtimes[] = [];
-        movieVariants.forEach((variant: any) => {
-          variant.amenityGroups.forEach((amenityGroup: any) => {
-            const isOpenCaption = amenityGroup.amenities.some(
-              (amenity: any) => amenity.name === 'Open caption',
-            );
-
-            amenityGroup.showtimes.forEach((showtime: any) => {
-              const {providerDate, providerTime} = showtime;
-
-              movieShowtimes.push({
-                isOpenCaption,
-                providerDate,
-                providerTime,
-              });
-            });
-          });
-        });
-        return {
-          name,
-          duration: durationMinutes,
-          tomatoRating: tomatoRating?.tomatometer || 0,
-          motionPictureRating: motionPictureRating?.code || '',
-          releaseDate,
-          posterImage: posterImage?.url || '',
-          movieShowtimes,
-        };
-      });
-      // movies.forEach((movie: any) => {
-      //   movie.movieVariants.forEach((variant: any) => {
-      //     variant.amenityGroups.forEach((amenityGroup: any) => {
-      //       const isOpenCaption = amenityGroup.amenities.some(
-      //         (amenity: any) => amenity.name === 'Open caption',
-      //       );
-      //       amenityGroup.showtimes.forEach((showtime: any) => {
-      //         const {providerDate, providerTime} = showtime;
-      //         movieShowtimes.push({
-      //           isOpenCaption,
-      //           providerDate,
-      //           providerTime,
-      //         });
-      //       });
-      //     });
-      //   });
-      // });
-
-      // setMovieShowtimes(movieShowtimes);
-      setDisplayDate(displayDate);
-      setMovieDetails(extractedMovies);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-  return {movieDetails, displayDate, movieShowtimes};
-}
-
-export function getTheaterShowtimes(id: string) {
+export function getTheaterShowtimesAndMovieData(theaters?: Theater[]) {
   const [movieDetails, setMovieDetails] = useState<MovieDetails[]>([]);
   const [todaysDate, setTodaysDate] = useState('');
-  const [movieShowtimes, setMovieShowtimes] = useState<MovieShowtimes[]>([]);
-  const [moviesPlaying, setMoviesPlaying] = useState([]);
-
-  //actual URL to grab theater showtimes and movie data
-  //const url = 'https://flixster.p.rapidapi.com/theaters/detail?id=9XbfBRfMDS1Wswz';
-
+  const [moviesPlaying, setMoviesPlaying] = useState([]); //literally just the movie titles found playing
+  const [getTheaterId, setGetTheaterId] = useState('');
+  const [allMovieShowtimes, setAllMovieShowtimes] = useState<MovieShowtimes[]>(
+    [],
+  );
   const fetchData = async () => {
     try {
       const response = await fetch(
@@ -125,14 +47,11 @@ export function getTheaterShowtimes(id: string) {
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
-      // const jsonData = await response.text();
       const jsonData = await response.text();
       const parsedData = JSON.parse(jsonData);
-      const displayDate =
-        parsedData?.data?.theaterShowtimeGroupings?.displayDate || [];
-      // const movies = parsedData?.data?.theaterShowtimeGroupings?.movies || [];
+      const allMovieShowtimes: MovieShowtimes[] = [];
+
       parsedData.forEach((item: {data: any}) => {
-        // Accessing the "data" and "theaterShowtimeGroupings" properties
         const data = item.data;
         const theaterShowtimeGroupings = data.theaterShowtimeGroupings;
         const todaysDate = theaterShowtimeGroupings.displayDate;
@@ -140,69 +59,56 @@ export function getTheaterShowtimes(id: string) {
         const moviesPlaying = theaterShowtimeGroupings?.movies.map(
           (movies: {name: any}) => movies.name,
         );
+        const extractedMovieDetails = theaterShowtimeGroupings?.movies?.map(
+          (movie: any) => {
+            const {
+              name,
+              durationMinutes,
+              tomatoRating,
+              motionPictureRating,
+              releaseDate,
+              posterImage,
+              movieVariants,
+            } = movie;
+            const movieShowtimes: MovieShowtimes[] = [];
+            movieVariants.map((variant: any) => {
+              variant.amenityGroups.map((amenityGroup: any) => {
+                const isOpenCaption = amenityGroup.amenities.some(
+                  (amenity: any) => amenity.name === 'Open caption',
+                );
+
+                amenityGroup.showtimes.map((showtime: any) => {
+                  const {providerDate, providerTime} = showtime;
+
+                  movieShowtimes.push({
+                    isOpenCaption,
+                    providerDate,
+                    movieName: name,
+                    providerTime,
+                    theaterId,
+                  });
+                });
+              });
+            });
+            allMovieShowtimes.push(...movieShowtimes);
+
+            return {
+              name,
+              duration: durationMinutes,
+              tomatoRating: tomatoRating?.tomatometer || 0,
+              motionPictureRating: motionPictureRating?.code || '',
+              releaseDate,
+              posterImage: posterImage?.url || '',
+              movieShowtimes,
+            };
+          },
+        );
         setMoviesPlaying(moviesPlaying);
-        // console.log(moviesPlaying);
+        setGetTheaterId(theaterId);
         setTodaysDate(todaysDate);
+        setMovieDetails(extractedMovieDetails);
       });
-      // const extractedMovies = movies?.map((movie: any) => {
-      //   const {
-      //     name,
-      //     durationMinutes,
-      //     tomatoRating,
-      //     motionPictureRating,
-      //     releaseDate,
-      //     posterImage,
-      //     movieVariants,
-      //   } = movie;
-      //   const movieShowtimes: MovieShowtimes[] = [];
-      //   movieVariants.forEach((variant: any) => {
-      //     variant.amenityGroups.forEach((amenityGroup: any) => {
-      //       const isOpenCaption = amenityGroup.amenities.some(
-      //         (amenity: any) => amenity.name === 'Open caption',
-      //       );
-
-      //       amenityGroup.showtimes.forEach((showtime: any) => {
-      //         const {providerDate, providerTime} = showtime;
-
-      //         movieShowtimes.push({
-      //           isOpenCaption,
-      //           providerDate,
-      //           providerTime,
-      //         });
-      //       });
-      //     });
-      //   });
-      //   return {
-      //     name,
-      //     duration: durationMinutes,
-      //     tomatoRating: tomatoRating?.tomatometer || 0,
-      //     motionPictureRating: motionPictureRating?.code || '',
-      //     releaseDate,
-      //     posterImage: posterImage?.url || '',
-      //     movieShowtimes,
-      //   };
-      // });
-      // movies.forEach((movie: any) => {
-      //   movie.movieVariants.forEach((variant: any) => {
-      //     variant.amenityGroups.forEach((amenityGroup: any) => {
-      //       const isOpenCaption = amenityGroup.amenities.some(
-      //         (amenity: any) => amenity.name === 'Open caption',
-      //       );
-      //       amenityGroup.showtimes.forEach((showtime: any) => {
-      //         const {providerDate, providerTime} = showtime;
-      //         movieShowtimes.push({
-      //           isOpenCaption,
-      //           providerDate,
-      //           providerTime,
-      //         });
-      //       });
-      //     });
-      //   });
-      // });
-
-      // setMovieShowtimes(movieShowtimes);
-      // setDisplayDate(displayDate);
-      // setMovieDetails(extractedMovies);
+      setAllMovieShowtimes(allMovieShowtimes);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -211,6 +117,12 @@ export function getTheaterShowtimes(id: string) {
   useEffect(() => {
     fetchData();
   }, []);
-  // return {movieDetails, displayDate, movieShowtimes};
-  return {todaysDate, moviesPlaying};
+
+  return {
+    todaysDate,
+    moviesPlaying,
+    movieDetails,
+    getTheaterId,
+    allMovieShowtimes,
+  };
 }

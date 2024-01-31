@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -10,26 +10,48 @@ import {
   Dimensions,
 } from 'react-native';
 import moment from 'moment';
-import {getTheaterList, useGetTheaterById} from '../hooks/useGetTheaters';
+import {getTheaterList} from '../hooks/useGetTheaters';
 import {Theater} from './Theater';
 import {Movie} from './Movie';
 import {
-  extractMovieData,
-  getTheaterShowtimes,
+  MovieDetails,
+  // MovieShowtimes,
+  getTheaterShowtimesAndMovieData,
 } from '../hooks/useGetMovieDetails';
+import {getMovieShowtimes} from '../hooks/getMovieShowtimes';
+import {getAllTheaters} from '../hooks/getAllTheaters';
+import {MovieShowtimes, TheaterDetails} from '../hooks/types';
+import {uuidV4} from '../utils/uuid';
+
 interface HomeProps {}
 const {height, width} = Dimensions.get('screen');
 
+export interface Theater {
+  id: string;
+  name: string;
+}
+
+interface MoviesAndTheatersAndShowtimes extends MovieDetails {
+  theaterInfo: {
+    [theaterId: string]: {
+      theaterDetails: TheaterDetails[];
+      showtimes: MovieShowtimes[];
+    };
+  };
+}
+
 const Home: FC<HomeProps> = () => {
   const [isMovieScreen, setIsMovieScreen] = useState(true);
-
-  const {movieDetails, displayDate} = extractMovieData('angelika');
-  const {theaterList, theaterId} = getTheaterList();
-  const theaterInfo = useGetTheaterById('Al2f6XiGOIkVTp4');
+  //THEATERDETAILS
+  const {todaysDate, moviesPlaying, allMovieShowtimes} =
+    getTheaterShowtimesAndMovieData();
   const toggleScreen = () => {
     setIsMovieScreen(!isMovieScreen);
   };
-  const {todaysDate, moviesPlaying} = getTheaterShowtimes(theaterId);
+
+  const {data: theaterData} = getAllTheaters();
+  const {movies: movieData} = getMovieShowtimes();
+
   return (
     <View style={styles.top}>
       <View style={styles.container}>
@@ -40,21 +62,27 @@ const Home: FC<HomeProps> = () => {
           {isMovieScreen ? 'movies' : 'theaters'}
         </Text>
       </TouchableOpacity>
-      {isMovieScreen ? (
-        <Movie
-          theaterInfo={theaterInfo}
-          movieDetails={movieDetails}
-          isMovieScreen={isMovieScreen}
-          moviesPlaying={moviesPlaying}
-        />
-      ) : (
-        <Theater
-          theaterInfo={theaterInfo}
-          movieDetails={movieDetails}
-          isMovieScreen={isMovieScreen}
-          theaterList={theaterList}
-        />
-      )}
+      <Movie
+        theaterData={theaterData}
+        movieData={movieData}
+        isMovieScreen={isMovieScreen}
+      />
+      {/* {
+        isMovieScreen ? (
+          <Movie
+            theaterInfo={theaterDetails}
+            movieDetails={movieDetails}
+            isMovieScreen={isMovieScreen}
+            moviesPlaying={moviesPlaying}
+          />
+        ) : undefined
+        // <Theater
+        //   theaterInfo={theaterList}
+        //   movieDetails={movieDetails}
+        //   isMovieScreen={isMovieScreen}
+        //   theaterList={theaterList}
+        // />
+      } */}
     </View>
   );
 };
@@ -82,7 +110,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     alignItems: 'center',
     marginHorizontal: 100,
-    marginBottom: 20
+    marginBottom: 20,
   },
   buttonText: {
     color: 'white',

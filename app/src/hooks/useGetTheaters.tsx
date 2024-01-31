@@ -1,11 +1,5 @@
 import {useEffect, useState} from 'react';
-
-export interface TheaterInfo {
-  theaterName: string;
-  hasShowtimes: boolean;
-  hasReservedSeating: boolean;
-  distance: number;
-}
+import {MovieShowtimes} from './useGetMovieDetails';
 
 export interface TheaterDetails {
   id: string;
@@ -13,49 +7,18 @@ export interface TheaterDetails {
   hasShowtimes: boolean;
   hasReservedSeating: boolean;
   distance: number;
+  movieShowtimes: MovieShowtimes[];
 }
-export const useGetTheaterById = (theaterId: string) => {
-  const [theaterName, setTheaterName] = useState('');
-  const [hasShowtimes, setHasShowtimes] = useState(false);
-  const [hasReservedSeating, setHasReservedSeating] = useState(false);
-  const [distance, setDistance] = useState(0);
 
-  const fetchData = async () => {
-    try {
-      const response = await fetch(
-        `/Users/honzwilliams/Desktop/showtimes/json/theaterList.json`,
-      );
-      if (!response.ok) {
-        throw new Error('oops failed to fetch ;/');
-      }
-      const data = await response.json();
-      const theaters = data.data.theaters;
-      const theaterById = theaters.find(
-        (theater: {id: string}) => theater.id === theaterId,
-      );
-      if (theaterById) {
-        const {name, hasShowtimes, hasReservedSeating, distance} = theaterById;
-        setTheaterName(name);
-        setHasShowtimes(hasShowtimes);
-        setHasReservedSeating(hasReservedSeating);
-        setDistance(distance);
-      }
-    } catch (error) {
-      console.log('errrrrro', error);
-    }
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  return {theaterName, hasReservedSeating, hasShowtimes, distance};
-};
-
-export const getTheaterList = () => {
-  const [theaterList, setTheaterList] = useState<TheaterDetails[]>([]);
+interface ExtendedMovie extends MovieShowtimes {
+  theaterName: string;
+}
+//actual API url
+// const url = 'https://flixster.p.rapidapi.com/theaters/list?zipCode=11221&radius=10';
+export const getTheaterList = (showtimes: MovieShowtimes[]) => {
+  const [theaterDetails, setTheaterDetails] = useState<TheaterDetails[]>([]);
   const [theaterId, setTheaterId] = useState('');
-  //actual API url
-  // const url = 'https://flixster.p.rapidapi.com/theaters/list?zipCode=11221&radius=10';
+
   const fetchData = async () => {
     try {
       const response = await fetch(
@@ -74,16 +37,18 @@ export const getTheaterList = () => {
           hasShowtimes: string;
           hasReservedSeating: any;
           distance: any;
+          movieShowtimes: MovieShowtimes[];
         }) => ({
           id: theater.id,
           theaterName: theater.name,
           hasShowtimes: theater.hasShowtimes === 'true', // Convert string to boolean
           hasReservedSeating: theater.hasReservedSeating,
           distance: theater.distance,
+          movieShowtimes: showtimes,
         }),
       );
       setTheaterId(theaterId);
-      setTheaterList(theaterData);
+      setTheaterDetails(theaterData);
     } catch (error) {
       console.log('errrrrro', error);
     }
@@ -92,5 +57,5 @@ export const getTheaterList = () => {
     fetchData();
   }, []);
 
-  return {theaterList, theaterId};
+  return {theaterDetails, theaterId};
 };

@@ -1,72 +1,92 @@
 import React, {FC} from 'react';
-import {Dimensions, FlatList, StyleSheet, Text, View} from 'react-native';
+import {
+  Dimensions,
+  FlatList,
+  Image,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import Accordion from '../components/Accordion';
-import {TheaterInfo, useGetTheaterById} from '../hooks/useGetTheaters';
 import {MovieInfo} from '../../../deadCode/useGetMoviesShowtimesDates';
-import {MovieDetails, MovieShowtimes} from '../hooks/useGetMovieDetails';
 import moment from 'moment';
 import Carousel from '../components/Carousel';
+import {
+  MovieDetails,
+  MovieShowtimes,
+  MovieWithShowtimes,
+  MoviesAndTheatersAndShowtimes,
+  TheaterDetails,
+} from '../hooks/types';
+import {uuidV4} from '../utils/uuid';
 
 const {height, width} = Dimensions.get('screen');
 
 interface MovieProps {
-  theaterInfo: TheaterInfo;
-  movieDetails: MovieDetails[];
+  theaterData: TheaterDetails[];
+  movieData: MovieWithShowtimes[];
   isMovieScreen: boolean;
-  moviesPlaying: string[];
 }
 
-export const Movie: FC<MovieProps> = ({
-  theaterInfo,
-  isMovieScreen,
-  movieDetails,
-  moviesPlaying,
-}) => {
-  const renderItem = ({item}: {item: MovieDetails}) => {
-    const movieTimes: {dateTime: Date; formattedTime: string}[] = [];
+export const Movie: FC<MovieProps> = ({theaterData, movieData}) => {
+  // Create a map to organize data by movie and theater
+  const organizedData = new Map();
 
-    item.movieShowtimes.map(showtime => {
-      const timeFormat = `${showtime.providerDate} ${showtime.providerTime}`;
-      const isOpenCaption = showtime.isOpenCaption ? 'open caption' : '';
-      const formattedTime = moment(timeFormat).format('LT');
-      const displayTime = `${formattedTime} ${isOpenCaption}`;
-      movieTimes.push({
-        dateTime: moment(timeFormat, 'YYYY-MM-DD HH:mm:ss').toDate(),
-        formattedTime: displayTime,
-      });
+  // Populate the map with data
+  movieData.forEach(movie => {
+    movie.showtimes.forEach(showtime => {
+      const theater = theaterData.find(
+        theater => theater.theaterId === showtime.showtimeTheaterId,
+      );
+      if (theater) {
+        const key = `${movie.movieName}_${theater.theaterName}`;
+        if (!organizedData.has(key)) {
+          organizedData.set(key, {
+            movieName: movie.movieName,
+            theaterName: theater.theaterName,
+            showtimes: [],
+          });
+        }
+        const isOpenCaption = showtime.isOpenCaption;
+        organizedData
+          .get(key)
+          .showtimes.push({isOpenCaption, showtimeTime: showtime.showtimeTime});
+      }
     });
+  });
 
-    movieTimes.sort((a, b) => a.dateTime.getTime() - b.dateTime.getTime());
-    const formattedShowtimesWithTag = movieTimes.map(
-      time => time.formattedTime,
-    );
+  // Convert the map values to an array for rendering
+  const organizedArray = Array.from(organizedData.values());
 
-    return (
-      <Accordion
-        theaterInfo={theaterInfo}
-        header={item.name}
-        movieDetails={movieDetails}
-        showtimes={formattedShowtimesWithTag.join('\n')}
-        isMovieScreen={isMovieScreen}
+  return (
+    <>
+      <FlatList
+        data={organizedArray}
+        renderItem={({item}) => (
+          <View>
+            <Text>{item.movieName}</Text>
+            <Text>{item.theaterName}</Text>
+            <FlatList
+              data={item.showtimes}
+              renderItem={({item: showtime}) => (
+                <View>
+                  <Text>
+                    {showtime.isOpenCaption
+                      ? `${showtime.showtimeTime} FUCK`
+                      : showtime.showtimeTime}
+                  </Text>
+                </View>
+              )}
+            />
+          </View>
+        )}
       />
-    );
-  };
-
-  // console.log('movie', moviesPlaying.map(movie => movie))
-  const movies = moviesPlaying.map(movie => movie);
-
-  const renderMovies = ({item}: any) => {
-    // const movies = item.map(movie => movie)
-    return <Text>{item}</Text>;
-  };
-
-  return <FlatList data={movieDetails} renderItem={renderItem} />;
+    </>
+  );
 };
 
 const styles = StyleSheet.create({
   container: {
-    // width,
     justifyContent: 'center',
-    // alignItems: 'center',
   },
 });

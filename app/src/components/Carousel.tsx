@@ -8,25 +8,22 @@ import {
   View,
 } from 'react-native';
 import {ShowtimeTab} from './ShowtimeTab';
-import {TheaterInfo} from '../hooks/useGetTheaters';
-import {MovieDetails} from '../hooks/useGetMovieDetails';
 import moment from 'moment';
 import Pagination from './Pagination';
+import {MovieDetails, TheaterDetails} from '../hooks/types';
 
 const {height, width} = Dimensions.get('screen');
 
 interface CarouselProps {
-  theaterInfo: TheaterInfo;
-  showtimes: string;
-  movieDetails: MovieDetails[] | string;
+  theaterInfo: TheaterDetails[];
+  movieData: MovieDetails[];
   isMovieScreen: boolean;
 }
 
 const Carousel: FC<CarouselProps> = ({
-  showtimes,
   theaterInfo,
   isMovieScreen,
-  movieDetails,
+  movieData,
 }) => {
   const [index, setIndex] = useState(0);
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -57,43 +54,62 @@ const Carousel: FC<CarouselProps> = ({
     itemVisiblePercentThreshold: 50,
   }).current;
 
-  const renderItem = ({item}: {item: MovieDetails | string}) => {
-    const movieTimes: {dateTime: Date; formattedTime: string}[] = [];
+  const renderItem = ({item}: {item: MovieDetails}) => {
+    // const movieTimes: {dateTime: Date; formattedTime: string}[] = [];
 
-    if (typeof item !== 'string' && item.movieShowtimes) {
-      item.movieShowtimes.forEach(showtime => {
-        const timeFormat = `${showtime.providerDate} ${showtime.providerTime}`;
-        const isOpenCaption = showtime.isOpenCaption ? 'open caption' : '';
-        const formattedTime = moment(timeFormat).format('LT');
-        const displayTime = `${formattedTime} ${isOpenCaption}`;
-        movieTimes.push({
-          dateTime: moment(timeFormat, 'YYYY-MM-DD HH:mm:ss').toDate(),
-          formattedTime: displayTime,
-        });
-      });
+    // if (typeof item !== 'string' && item.movieShowtimes) {
+    //   item.movieShowtimes.forEach(showtime => {
+    //     const timeFormat = `${showtime.providerDate} ${showtime.providerTime}`;
+    //     const isOpenCaption = showtime.isOpenCaption ? 'open caption' : '';
+    //     const formattedTime = moment(timeFormat).format('LT');
+    //     const displayTime = `${formattedTime} ${isOpenCaption}`;
+    //     movieTimes.push({
+    //       dateTime: moment(timeFormat, 'YYYY-MM-DD HH:mm:ss').toDate(),
+    //       formattedTime: displayTime,
+    //     });
+    //   });
 
-      movieTimes.sort((a, b) => a.dateTime.getTime() - b.dateTime.getTime());
-    }
+    //   movieTimes.sort((a, b) => a.dateTime.getTime() - b.dateTime.getTime());
+    // }
 
-    const formattedShowtimesWithTag = movieTimes.map(
-      time => time.formattedTime,
+    // const formattedShowtimesWithTag = movieTimes.map(
+    //   time => time.formattedTime,
+    // );
+    const theaterIdFromTheater = theaterInfo.map(theater => theater.theaterId);
+    const theaterIdFromMovie = item.showtimes.filter(showtime =>
+      theaterIdFromTheater.includes(showtime.showtimeTheaterId),
     );
+
+    const theaterNames = theaterIdFromMovie.map(showtime => {
+      const matchingTheater = theaterInfo.find(
+        theater => theater.theaterId === showtime.showtimeTheaterId,
+      );
+      return matchingTheater ? matchingTheater.theaterName : null;
+    });
+    // console.log('id from theater info', theaterIdFromTheater);
+    // console.log('id from movie showtime', theaterIdFromMovie);
 
     return (
       <ShowtimeTab
         theaterInfo={theaterInfo}
-        movieDetails={movieDetails}
-        showtimes={formattedShowtimesWithTag.join('\n')}
+        movieData={movieData}
         isMovieScreen={isMovieScreen}
       />
     );
   };
 
+  const movieInfoObject = (
+    <View style={styles.movieInfoObject}>
+      <Text>movie info</Text>
+    </View>
+  );
+
   return (
     <View style={styles.container}>
-      <Pagination data={movieDetails} scrollX={scrollX} index={index} />
+      {/* {movieInfoObject} */}
+      {/* <Pagination data={movieData} scrollX={scrollX} index={index} /> */}
       <FlatList
-        data={movieDetails}
+        data={movieData}
         renderItem={renderItem}
         horizontal
         pagingEnabled
@@ -128,5 +144,9 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
+  },
+  movieInfoObject: {
+    borderColor: 'red',
+    borderWidth: 1,
   },
 });

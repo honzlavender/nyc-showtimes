@@ -1,10 +1,10 @@
 import React, {FC} from 'react';
 import {Text, View} from 'react-native';
-import {MovieDetails} from '../hooks/useGetMovieDetails';
+import { MovieDetails } from '../hooks/types';
 
 interface ExpandedHeaderProps {
-  theaterName?: string;
-  movieTitle?: MovieDetails[] | string;
+  theaterName?: string[];
+  movieTitle?: string;
   isMovieScreen: boolean;
 }
 

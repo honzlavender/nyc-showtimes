@@ -7,28 +7,26 @@ import {
   StyleSheet,
 } from 'react-native';
 import {ShowtimeTab} from './ShowtimeTab';
-import {TheaterInfo} from '../hooks/useGetTheaters';
-import {MovieInfo} from '../../../deadCode/useGetMoviesShowtimesDates';
-import {MovieDetails, MovieShowtimes} from '../hooks/useGetMovieDetails';
 import Carousel from './Carousel';
+import {MovieDetails, TheaterDetails} from '../hooks/types';
+import {ExpandedHeader} from './ExpandedHeader';
+import {Body} from './Body';
 
 const {height, width} = Dimensions.get('screen');
 
 interface AccordionProps {
-  theaterInfo: TheaterInfo;
-  showtimes: string;
+  theaterInfo: TheaterDetails[];
   // movieTitle?: string;
   header: string;
   // theaterName?: string;
-  movieDetails: MovieDetails[] | string;
+  movieData: MovieDetails[];
   isMovieScreen: boolean;
 }
 
 const Accordion: FC<AccordionProps> = ({
-  showtimes,
   theaterInfo,
   isMovieScreen,
-  movieDetails,
+  movieData,
   header,
 }) => {
   const [expanded, setExpanded] = useState(false);
@@ -38,16 +36,9 @@ const Accordion: FC<AccordionProps> = ({
 
   const body = (
     <View style={styles.accordBody}>
-      {/* <ShowtimeTab
-        theaterInfo={theaterInfo}
-        movieDetails={movieDetails}
-        showtimes={showtimes}
-        isMovieScreen={isMovieScreen}
-      /> */}
       <Carousel
         theaterInfo={theaterInfo}
-        showtimes={showtimes}
-        movieDetails={movieDetails}
+        movieData={movieData}
         isMovieScreen={isMovieScreen}
       />
     </View>
@@ -60,7 +51,6 @@ const Accordion: FC<AccordionProps> = ({
         <Text>{expanded ? '^' : '***'}</Text>
       </TouchableOpacity>
       {expanded && body}
-      {/* <Carousel theaterInfo={theaterInfo} /> */}
     </View>
   );
 };
