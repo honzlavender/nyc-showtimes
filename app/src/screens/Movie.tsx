@@ -62,11 +62,7 @@ export const Movie: FC<MovieProps> = ({
   movieData,
   isMovieScreen,
 }) => {
-  const combineObjects = (
-    movies: Movie[],
-    theaters: Theater[],
-    // theaters: {theaterId: string; theaterName: string}[],
-  ): Movie[] => {
+  const combineObjects = (movies: Movie[], theaters: Theater[]): Movie[] => {
     const uniqueMovies: {[key: string]: Movie} = {};
 
     movies.forEach(movie => {
@@ -156,30 +152,18 @@ export const Movie: FC<MovieProps> = ({
   );
 
   return (
-    <>
-      {renderedItem}
-      {/* <FlatList
-        data={organizedArray}
-        renderItem={({item}) => (
-          <View>
-            <Text>{item.movieName}</Text>
-            <Text>{item.theaterName}</Text>
-            <FlatList
-              data={item.showtimes}
-              renderItem={({item: showtime}) => (
-                <View>
-                  <Text>
-                    {showtime.isOpenCaption
-                      ? `${showtime.showtimeTime} FUCK`
-                      : showtime.showtimeTime}
-                  </Text>
-                </View>
-              )}
-            />
-          </View>
-        )}
-      /> */}
-    </>
+    <FlatList
+      data={dataToRender}
+      renderItem={({item}) => (
+        <Accordion
+          header={item.movieName}
+          // movieData={item.showtimes}
+          theaterInfo={item.theaters}
+          // theaterName={item.theaterName}
+          isMovieScreen={isMovieScreen}
+        />
+      )}
+    />
   );
 };
 

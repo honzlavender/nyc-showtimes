@@ -17,6 +17,7 @@ import {
   TheaterDetails,
 } from '../hooks/types';
 import {Movie} from '../screens/Movie';
+import {ExpandedHeader} from './ExpandedHeader';
 
 const {height, width} = Dimensions.get('screen');
 
@@ -64,35 +65,18 @@ const Carousel: FC<CarouselProps> = ({
       {/* <Pagination data={theaterInfo} scrollX={scrollX} index={index} /> */}
       <FlatList
         data={theaterInfo}
+        horizontal
+        showsHorizontalScrollIndicator={true}
         renderItem={({item}) => (
           <View>
-            <Text>{item.theaterName} - {item.theaterId}</Text>
-            <FlatList
-              data={item.showtimes}
-              renderItem={({item}) => {
-                console.log(item.showtimeTime)
-                return (
-                  <Text>
-                    {item.showtimeTime}
-                    {item.isOpenCaption && ' - open captions'}
-                  </Text>
-                );
-              }}
+            <ExpandedHeader
+              isMovieScreen={isMovieScreen}
+              theaterName={item.theaterName}
+              theaterInfo={item.showtimes}
             />
           </View>
         )}
       />
-      {/* <FlatList
-        data={movieData}
-        renderItem={renderItem}
-        horizontal
-        pagingEnabled
-        snapToAlignment="center"
-        showsHorizontalScrollIndicator={false}
-        onScroll={handleOnScroll}
-        onViewableItemsChanged={handleOnViewableItemsChanged}
-        viewabilityConfig={viewabilityConfig}
-      /> */}
     </View>
   );
 };
@@ -106,7 +90,8 @@ const styles = StyleSheet.create({
   //   alignItems: 'center',
   // },
   container: {
-    marginTop: 20,
+    // marginTop: 20,
+    borderWidth: 2,
   },
   item: {
     backgroundColor: '#f9c2ff',

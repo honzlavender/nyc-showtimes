@@ -5,8 +5,6 @@ import {Movie, Showtime} from '../screens/Movie';
 
 export function getMovieShowtimes() {
   const [movies, setMovies] = useState<Movie[]>([]);
-  // const [movies, setMovies] = useState<MovieWithShowtimes[]>([]);
-
   const fetchData = async () => {
     try {
       const response = await fetch(
@@ -19,7 +17,6 @@ export function getMovieShowtimes() {
       const parsedData = JSON.parse(data);
 
       const moviesArray: Movie[] = [];
-      // const moviesArray: MovieWithShowtimes[] = [];
 
       parsedData.forEach((item: {data: any}) => {
         const data = item.data;
@@ -36,7 +33,6 @@ export function getMovieShowtimes() {
           };
 
           const showtimes: Showtime[] = [];
-          // const showtimes: MovieShowtimes[] = [];
 
           movie.movieVariants.forEach((variant: any) => {
             variant.amenityGroups.forEach((amenityGroup: any) => {
@@ -58,6 +54,12 @@ export function getMovieShowtimes() {
                   showtimeTime: formattedTime,
                   showtimeTheaterId,
                 });
+              });
+
+              showtimes.sort((a, b) => {
+                const timeA = moment(a.showtimeTime, 'h:mm A');
+                const timeB = moment(b.showtimeTime, 'h:mm A');
+                return timeA.isBefore(timeB) ? -1 : timeA.isAfter(timeB) ? 1 : 0;
               });
             });
           });
