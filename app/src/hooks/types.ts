@@ -16,6 +16,7 @@ export interface MovieShowtimes {
 }
 
 export interface TheaterDetails {
+   showtimes: MovieShowtimes[];
     theaterId: string;
     theaterName: string;
     hasReservedSeating: boolean;

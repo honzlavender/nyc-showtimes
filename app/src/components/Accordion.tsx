@@ -5,21 +5,27 @@ import {
   TouchableOpacity,
   Dimensions,
   StyleSheet,
+  FlatList,
 } from 'react-native';
 import {ShowtimeTab} from './ShowtimeTab';
 import Carousel from './Carousel';
-import {MovieDetails, TheaterDetails} from '../hooks/types';
+import {
+  MovieDetails,
+  MovieShowtimes,
+  MovieWithShowtimes,
+  TheaterDetails,
+} from '../hooks/types';
 import {ExpandedHeader} from './ExpandedHeader';
 import {Body} from './Body';
+import {Movie} from '../screens/Movie';
 
 const {height, width} = Dimensions.get('screen');
 
 interface AccordionProps {
   theaterInfo: TheaterDetails[];
-  // movieTitle?: string;
   header: string;
-  // theaterName?: string;
-  movieData: MovieDetails[];
+  theaterName?: string;
+  movieData?: Movie[];
   isMovieScreen: boolean;
 }
 
@@ -27,13 +33,13 @@ const Accordion: FC<AccordionProps> = ({
   theaterInfo,
   isMovieScreen,
   movieData,
+  theaterName,
   header,
 }) => {
   const [expanded, setExpanded] = useState(false);
   const toggleItem = () => {
     setExpanded(!expanded);
   };
-
   const body = (
     <View style={styles.accordBody}>
       <Carousel

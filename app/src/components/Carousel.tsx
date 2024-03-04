@@ -10,13 +10,19 @@ import {
 import {ShowtimeTab} from './ShowtimeTab';
 import moment from 'moment';
 import Pagination from './Pagination';
-import {MovieDetails, TheaterDetails} from '../hooks/types';
+import {
+  MovieDetails,
+  MovieShowtimes,
+  MovieWithShowtimes,
+  TheaterDetails,
+} from '../hooks/types';
+import {Movie} from '../screens/Movie';
 
 const {height, width} = Dimensions.get('screen');
 
 interface CarouselProps {
   theaterInfo: TheaterDetails[];
-  movieData: MovieDetails[];
+  movieData?: Movie[];
   isMovieScreen: boolean;
 }
 
@@ -27,7 +33,6 @@ const Carousel: FC<CarouselProps> = ({
 }) => {
   const [index, setIndex] = useState(0);
   const scrollX = useRef(new Animated.Value(0)).current;
-
   const handleOnScroll = (event: any) => {
     Animated.event(
       [
@@ -54,61 +59,30 @@ const Carousel: FC<CarouselProps> = ({
     itemVisiblePercentThreshold: 50,
   }).current;
 
-  const renderItem = ({item}: {item: MovieDetails}) => {
-    // const movieTimes: {dateTime: Date; formattedTime: string}[] = [];
-
-    // if (typeof item !== 'string' && item.movieShowtimes) {
-    //   item.movieShowtimes.forEach(showtime => {
-    //     const timeFormat = `${showtime.providerDate} ${showtime.providerTime}`;
-    //     const isOpenCaption = showtime.isOpenCaption ? 'open caption' : '';
-    //     const formattedTime = moment(timeFormat).format('LT');
-    //     const displayTime = `${formattedTime} ${isOpenCaption}`;
-    //     movieTimes.push({
-    //       dateTime: moment(timeFormat, 'YYYY-MM-DD HH:mm:ss').toDate(),
-    //       formattedTime: displayTime,
-    //     });
-    //   });
-
-    //   movieTimes.sort((a, b) => a.dateTime.getTime() - b.dateTime.getTime());
-    // }
-
-    // const formattedShowtimesWithTag = movieTimes.map(
-    //   time => time.formattedTime,
-    // );
-    const theaterIdFromTheater = theaterInfo.map(theater => theater.theaterId);
-    const theaterIdFromMovie = item.showtimes.filter(showtime =>
-      theaterIdFromTheater.includes(showtime.showtimeTheaterId),
-    );
-
-    const theaterNames = theaterIdFromMovie.map(showtime => {
-      const matchingTheater = theaterInfo.find(
-        theater => theater.theaterId === showtime.showtimeTheaterId,
-      );
-      return matchingTheater ? matchingTheater.theaterName : null;
-    });
-    // console.log('id from theater info', theaterIdFromTheater);
-    // console.log('id from movie showtime', theaterIdFromMovie);
-
-    return (
-      <ShowtimeTab
-        theaterInfo={theaterInfo}
-        movieData={movieData}
-        isMovieScreen={isMovieScreen}
-      />
-    );
-  };
-
-  const movieInfoObject = (
-    <View style={styles.movieInfoObject}>
-      <Text>movie info</Text>
-    </View>
-  );
-
   return (
     <View style={styles.container}>
-      {/* {movieInfoObject} */}
-      {/* <Pagination data={movieData} scrollX={scrollX} index={index} /> */}
+      {/* <Pagination data={theaterInfo} scrollX={scrollX} index={index} /> */}
       <FlatList
+        data={theaterInfo}
+        renderItem={({item}) => (
+          <View>
+            <Text>{item.theaterName} - {item.theaterId}</Text>
+            <FlatList
+              data={item.showtimes}
+              renderItem={({item}) => {
+                console.log(item.showtimeTime)
+                return (
+                  <Text>
+                    {item.showtimeTime}
+                    {item.isOpenCaption && ' - open captions'}
+                  </Text>
+                );
+              }}
+            />
+          </View>
+        )}
+      />
+      {/* <FlatList
         data={movieData}
         renderItem={renderItem}
         horizontal
@@ -118,7 +92,7 @@ const Carousel: FC<CarouselProps> = ({
         onScroll={handleOnScroll}
         onViewableItemsChanged={handleOnViewableItemsChanged}
         viewabilityConfig={viewabilityConfig}
-      />
+      /> */}
     </View>
   );
 };

@@ -1,9 +1,11 @@
 import {useEffect, useState} from 'react';
 import {MovieDetails, MovieShowtimes, MovieWithShowtimes} from './types';
 import moment from 'moment';
+import {Movie, Showtime} from '../screens/Movie';
 
 export function getMovieShowtimes() {
-  const [movies, setMovies] = useState<MovieWithShowtimes[]>([]);
+  const [movies, setMovies] = useState<Movie[]>([]);
+  // const [movies, setMovies] = useState<MovieWithShowtimes[]>([]);
 
   const fetchData = async () => {
     try {
@@ -16,7 +18,8 @@ export function getMovieShowtimes() {
       const data = await response.text();
       const parsedData = JSON.parse(data);
 
-      const moviesArray: MovieWithShowtimes[] = [];
+      const moviesArray: Movie[] = [];
+      // const moviesArray: MovieWithShowtimes[] = [];
 
       parsedData.forEach((item: {data: any}) => {
         const data = item.data;
@@ -32,7 +35,8 @@ export function getMovieShowtimes() {
             posterImageUrl: movie.posterImage.url,
           };
 
-          const showtimes: MovieShowtimes[] = [];
+          const showtimes: Showtime[] = [];
+          // const showtimes: MovieShowtimes[] = [];
 
           movie.movieVariants.forEach((variant: any) => {
             variant.amenityGroups.forEach((amenityGroup: any) => {
