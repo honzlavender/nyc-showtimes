@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
   // },
   container: {
     // marginTop: 20,
-    borderWidth: 2,
+    // borderWidth: 2,
   },
   item: {
     backgroundColor: '#f9c2ff',

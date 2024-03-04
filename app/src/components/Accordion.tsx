@@ -76,7 +76,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   accordBody: {
-    backgroundColor: 'red'
     // width,
     // justifyContent: 'center',
     // alignItems: 'center',

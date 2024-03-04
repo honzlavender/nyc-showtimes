@@ -19,9 +19,10 @@ export const ExpandedHeader: FC<ExpandedHeaderProps> = ({
   const header = isMovieScreen ? theaterName : movieTitle;
   return (
     <View>
-      <Text>{`${header}`}</Text>
+      <Text style={{borderWidth: 2, backgroundColor: 'lightblue'}}>{`${header}`}</Text>
       <FlatList
         data={theaterInfo}
+        style={{borderWidth: 2, backgroundColor: 'red'}}
         renderItem={({item}) => {
           return (
             <ShowtimeTab
