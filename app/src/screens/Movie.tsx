@@ -52,7 +52,6 @@ export interface Movie {
 
 interface MovieProps {
   theaterData: TheaterDetails[];
-  // movieData: MovieWithShowtimes[];
   movieData: Movie[];
   isMovieScreen: boolean;
 }
@@ -135,31 +134,16 @@ export const Movie: FC<MovieProps> = ({
     });
   });
   const dataToRender = Object.values(formattedData);
-  // Convert the map values to an array for rendering
-  const renderedItem = (
-    <FlatList
-      data={dataToRender}
-      renderItem={({item}) => (
-        <Accordion
-          header={item.movieName}
-          // movieData={item.showtimes}
-          theaterInfo={item.theaters}
-          // theaterName={item.theaterName}
-          isMovieScreen={isMovieScreen}
-        />
-      )}
-    />
-  );
 
   return (
     <FlatList
       data={dataToRender}
+      snapToAlignment="center"
+      snapToInterval={width}
       renderItem={({item}) => (
         <Accordion
           header={item.movieName}
-          // movieData={item.showtimes}
           theaterInfo={item.theaters}
-          // theaterName={item.theaterName}
           isMovieScreen={isMovieScreen}
         />
       )}

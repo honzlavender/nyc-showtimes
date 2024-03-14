@@ -34,7 +34,7 @@ export const ShowtimeTab: FC<ShowtimeTabProps> = ({
 
 const styles = StyleSheet.create({
   container: {
-    width,
+    // width,
     // paddingLeft: 12,
     // alignItems: 'center',
     // justifyContent: 'space-around',

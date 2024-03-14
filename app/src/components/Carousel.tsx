@@ -61,18 +61,23 @@ const Carousel: FC<CarouselProps> = ({
   }).current;
 
   return (
-    <View style={styles.container}>
+    <View>
       {/* <Pagination data={theaterInfo} scrollX={scrollX} index={index} /> */}
       <FlatList
         data={theaterInfo}
         horizontal
-        showsHorizontalScrollIndicator={true}
-        renderItem={({item}) => (
-          <View>
+        pagingEnabled
+        snapToAlignment="center"
+        showsHorizontalScrollIndicator={false}
+        onScroll={handleOnScroll}
+        renderItem={({item, index}) => (
+          <View style={styles.container}>
             <ExpandedHeader
               isMovieScreen={isMovieScreen}
               theaterName={item.theaterName}
               theaterInfo={item.showtimes}
+              index={index}
+              totalTheaters={theaterInfo.length}
             />
           </View>
         )}
@@ -90,6 +95,9 @@ const styles = StyleSheet.create({
   //   alignItems: 'center',
   // },
   container: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
     // marginTop: 20,
     // borderWidth: 2,
   },
