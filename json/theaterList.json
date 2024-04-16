@@ -1,0 +1,39 @@
+{
+    "data": {
+      "theaters": [
+        {
+          "id": "9XbfBRfMDS1Wswz",
+          "tid": "AAWWR",
+          "name": "Williamsburg Cinemas",
+          "latitude": 40.7139,
+          "longitude": -73.9599,
+          "hasShowtimes": "true",
+          "hasReservedSeating": true,
+          "isTicketing": true,
+          "distance": 2.310253941707752
+        },
+        {
+          "id": "YkgfGwfNWS2bcgZ",
+          "tid": "AAXUN",
+          "name": "Alamo Drafthouse Downtown Brooklyn",
+          "latitude": 40.693,
+          "longitude": -73.9833,
+          "hasShowtimes": "true",
+          "hasReservedSeating": true,
+          "isTicketing": true,
+          "distance": 2.9251453616440553
+        },
+        {
+          "id": "Al2f6XiGOIkVTp4",
+          "tid": "AAECI",
+          "name": "Angelika Film Center & Cafe",
+          "latitude": 40.7258,
+          "longitude": -73.9978,
+          "hasShowtimes": "true",
+          "hasReservedSeating": true,
+          "isTicketing": true,
+          "distance": 4.388775259937625
+        }
+      ]
+    }
+  }
