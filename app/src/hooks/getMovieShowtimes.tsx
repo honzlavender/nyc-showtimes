@@ -4,6 +4,7 @@ import moment from 'moment';
 
 export function getMovieShowtimes() {
   const [movies, setMovies] = useState<Movie[]>([]);
+  const [todaysDate, setTodaysDate] = useState('');
   const fetchData = async () => {
     try {
       const response = await fetch(
@@ -19,6 +20,7 @@ export function getMovieShowtimes() {
       parsedData.forEach((item: {data: any}) => {
         const data = item.data;
         const theaterShowtimeGroup = data.theaterShowtimeGroupings;
+        const todaysDate = theaterShowtimeGroup.displayDate;
 
         theaterShowtimeGroup.movies.forEach((movie: any) => {
           const movieDetails: MovieDetails = {
@@ -64,6 +66,7 @@ export function getMovieShowtimes() {
           });
           moviesArray.push({movieDetails: [movieDetails], showtimes});
         });
+        setTodaysDate(todaysDate);
       });
       setMovies(moviesArray);
     } catch (error) {
@@ -73,5 +76,5 @@ export function getMovieShowtimes() {
   useEffect(() => {
     fetchData();
   }, []);
-  return {movies};
+  return {movies, todaysDate};
 }

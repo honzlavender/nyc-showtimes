@@ -1,5 +1,5 @@
 export interface TheaterDetails {
-    // showtimes: Showtime[];
+    showtimes: Showtime[];
     theaterId: string;
     theaterName: string;
     hasReservedSeating: boolean;

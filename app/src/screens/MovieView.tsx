@@ -1,6 +1,8 @@
 import React, {FC} from 'react';
 import {Movie, Showtime, TheaterDetails} from '../hooks/types';
 import {FlatList, Text, View} from 'react-native';
+import {width} from '../utils/utils';
+import Accordion from '../components/Accordion';
 
 interface MovieProps {
   theaterData: TheaterDetails[];
@@ -89,13 +91,16 @@ const MovieView: FC<MovieProps> = ({theaterData, movieData}) => {
   return (
     <FlatList
       data={dataToRender}
+      snapToAlignment="center"
+      snapToInterval={width}
       renderItem={({item}) => (
-        <View>
-          <Text>{item.movieName}</Text>
-        </View>
+        <Accordion
+          header={item.movieName}
+          theaterInfo={item.theaters}
+        />
       )}
     />
   );
 };
- 
+
 export default MovieView;
