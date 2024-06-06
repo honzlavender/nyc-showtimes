@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 import {Movie, Showtime, TheaterDetails} from '../hooks/types';
 import {FlatList, Text, View} from 'react-native';
 import {width} from '../utils/utils';
@@ -10,6 +10,8 @@ interface MovieProps {
 }
 
 const MovieView: FC<MovieProps> = ({theaterData, movieData}) => {
+  const [chosenMovie, setChosenMovie] = useState(null);
+
   const combineObjects = (
     movies: Movie[],
     theaters: TheaterDetails[],
@@ -93,10 +95,13 @@ const MovieView: FC<MovieProps> = ({theaterData, movieData}) => {
       data={dataToRender}
       snapToAlignment="center"
       snapToInterval={width}
-      renderItem={({item}) => (
+      renderItem={({item, index}) => (
         <Accordion
           header={item.movieName}
           theaterInfo={item.theaters}
+          index={index}
+          chosenMovie={chosenMovie}
+          setChosenMovie={setChosenMovie}
         />
       )}
     />

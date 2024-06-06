@@ -6,13 +6,21 @@ import Carousel from './Carousel';
 interface AccordionProps {
   header: string;
   theaterInfo: TheaterDetails[];
+  index: any;
+  chosenMovie: any;
+  setChosenMovie: any;
 }
 
-const Accordion: FC<AccordionProps> = ({header, theaterInfo}) => {
-  const [expandedItem, setExpandedItem] = useState(false);
-  const toggleItem = (index: any) => {
-    //only allow one item to be expanded at a time
-    setExpandedItem(!expandedItem);
+const Accordion: FC<AccordionProps> = ({
+  header,
+  theaterInfo,
+  index,
+  chosenMovie,
+  setChosenMovie,
+}) => {
+  const isOpen = chosenMovie === index;
+  const toggleItem = () => {
+    setChosenMovie(chosenMovie ? null : index);
   };
   const body = (
     <View>
@@ -21,13 +29,11 @@ const Accordion: FC<AccordionProps> = ({header, theaterInfo}) => {
   );
   return (
     <View style={styles.container}>
-      <TouchableOpacity
-        style={styles.headerButton}
-        onPress={toggleItem}>
+      <TouchableOpacity style={styles.headerButton} onPress={toggleItem}>
         <Text style={styles.header}>{header}</Text>
-        <Text>{expandedItem ? '^' : '***'}</Text>
+        <Text>{isOpen ? '^' : '***'}</Text>
       </TouchableOpacity>
-      {expandedItem && body}
+      {isOpen && body}
     </View>
   );
 };
