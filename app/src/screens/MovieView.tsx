@@ -10,19 +10,18 @@ interface MovieProps {
 }
 
 const MovieView: FC<MovieProps> = ({theaterData, movieData}) => {
-  const [chosenMovie, setChosenMovie] = useState(null);
+  const [chosenMovie, setChosenMovie] = useState(false);
 
   const combineObjects = (
     movies: Movie[],
     theaters: TheaterDetails[],
   ): Movie[] => {
     const uniqueMovies: {[key: string]: Movie} = {};
-
     movies.forEach(movie => {
-      movie.movieDetails.forEach(movieName => {
-        const key = movieName.movieName;
+      movie.movieDetails.forEach(movieDetail => {
+        const key = movieDetail.movieName;
         if (!uniqueMovies[key]) {
-          uniqueMovies[key] = {...movie, showtimes: []};
+          uniqueMovies[key] = {...movie, ...movieDetail, showtimes: []};
         }
         movie.showtimes.forEach(showtime => {
           const theaterId = showtime.showtimeTheaterId;
@@ -50,15 +49,25 @@ const MovieView: FC<MovieProps> = ({theaterData, movieData}) => {
     [],
   );
 
-  function combineShowtimes(data: Showtime[]): any[] {
+  function combineShowtimes(data: Showtime[], movies: Movie[]): any[] {
     const combinedData: {[key: string]: any} = {};
-
     data.forEach(entry => {
       const key = `${entry.theaterName}_${entry.movieName}`;
       if (!combinedData[key]) {
+        const matchingMovie = movies.find(movie =>
+          movie.movieDetails.some(
+            detail => detail.movieName === entry.movieName,
+          ),
+        );
         combinedData[key] = {
           theaterName: entry.theaterName,
           movieName: entry.movieName,
+          movieDetails: matchingMovie
+            ? matchingMovie.movieDetails.find(
+                detail => detail.movieName === entry.movieName,
+              )
+            : {},
+
           showtimes: [],
         };
       }
@@ -69,16 +78,17 @@ const MovieView: FC<MovieProps> = ({theaterData, movieData}) => {
         isOpenCaption: entry.isOpenCaption,
       });
     });
-
     return Object.values(combinedData);
   }
-  const newArray = combineShowtimes(showtimeArray);
+
+  const newArray = combineShowtimes(showtimeArray, combinedMovies);
   const formattedData: {[key: string]: any} = {};
   newArray.forEach(entry => {
     const key = entry.movieName;
     if (!formattedData[key]) {
       formattedData[key] = {
         movieName: entry.movieName,
+        movieDetails: entry.movieDetails,
         theaters: [],
       };
     }
@@ -95,15 +105,18 @@ const MovieView: FC<MovieProps> = ({theaterData, movieData}) => {
       data={dataToRender}
       snapToAlignment="center"
       snapToInterval={width}
-      renderItem={({item, index}) => (
-        <Accordion
-          header={item.movieName}
-          theaterInfo={item.theaters}
-          index={index}
-          chosenMovie={chosenMovie}
-          setChosenMovie={setChosenMovie}
-        />
-      )}
+      renderItem={({item, index}) => {
+        return (
+          <Accordion
+            header={item.movieName}
+            theaterInfo={item.theaters}
+            index={index}
+            chosenMovie={chosenMovie}
+            setChosenMovie={setChosenMovie}
+            movieDetails={[item.movieDetails]}
+          />
+        );
+      }}
     />
   );
 };

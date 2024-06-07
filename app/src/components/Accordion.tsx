@@ -1,6 +1,12 @@
 import React, {FC, useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {TheaterDetails} from '../hooks/types';
+import {
+  ImageBackground,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import {MovieDetails, TheaterDetails} from '../hooks/types';
 import Carousel from './Carousel';
 
 interface AccordionProps {
@@ -9,6 +15,7 @@ interface AccordionProps {
   index: any;
   chosenMovie: any;
   setChosenMovie: any;
+  movieDetails: MovieDetails[];
 }
 
 const Accordion: FC<AccordionProps> = ({
@@ -17,15 +24,18 @@ const Accordion: FC<AccordionProps> = ({
   index,
   chosenMovie,
   setChosenMovie,
+  movieDetails,
 }) => {
   const isOpen = chosenMovie === index;
   const toggleItem = () => {
-    setChosenMovie(chosenMovie ? null : index);
+    setChosenMovie(chosenMovie === index ? null : index);
   };
+const image = movieDetails.map(url => url.posterImageUrl)
+
   const body = (
-    <View>
+    <ImageBackground source={{uri: image[0]}}>
       <Carousel theaterInfo={theaterInfo} />
-    </View>
+    </ImageBackground>
   );
   return (
     <View style={styles.container}>
@@ -40,6 +50,10 @@ const Accordion: FC<AccordionProps> = ({
 
 const styles = StyleSheet.create({
   container: {},
+  image: {
+    flex: 1,
+    justifyContent: 'center',
+  },
   headerButton: {
     padding: 12,
     backgroundColor: 'pink',

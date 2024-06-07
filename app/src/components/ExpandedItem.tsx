@@ -45,5 +45,6 @@ const styles = StyleSheet.create({
     // flex: 0.4,
     width: '80%',
     borderWidth: 2,
+    backgroundColor: '#ffffff50'
   },
 });
