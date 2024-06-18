@@ -4,6 +4,7 @@ import {getMovieShowtimes} from '../hooks/getMovieShowtimes';
 import {getAllTheaters} from '../hooks/getAllTheaters';
 import MovieView from './MovieView';
 import moment from 'moment';
+import WavyBorder from '../assets/svg/WavyBorder';
 
 interface HomeProps {}
 
@@ -16,6 +17,7 @@ const Home: FC<HomeProps> = () => {
   const {data: theaterData} = getAllTheaters();
   return (
     <View style={styles.container}>
+      <WavyBorder />
       <Text style={styles.date}>{moment(todaysDate).format('LL')}</Text>
       <TouchableOpacity style={styles.button} onPress={toggleScreen}>
         <Text style={styles.buttonText}>
