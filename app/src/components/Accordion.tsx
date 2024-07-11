@@ -40,7 +40,7 @@ const image = movieDetails.map(url => url.posterImageUrl)
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.headerButton} onPress={toggleItem}>
-        <Text style={styles.header}>{header}</Text>
+        <Text style={styles.headerFont}>{header}</Text>
         <Text>{isOpen ? '^' : '***'}</Text>
       </TouchableOpacity>
       {isOpen && body}
@@ -49,22 +49,27 @@ const image = movieDetails.map(url => url.posterImageUrl)
 };
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    // justifyContent: 'center'
+    // borderWidth: 1,
+
+  },
   image: {
-    flex: 1,
-    justifyContent: 'center',
+    // flex: 1,
+    // justifyContent: 'center',
   },
   headerButton: {
-    padding: 12,
-    backgroundColor: 'pink',
-    color: '#eee',
-    flex: 1,
-    borderWidth: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    // marginVertical: 12,
+    // marginHorizontal: 24,
+    // backgroundColor: 'pink',
+    // color: '#eee',
+    // flex: 1,
+    // borderWidth: 1,
+    // flexDirection: 'row',
+    // justifyContent: 'space-between',
   },
-  header: {
-    fontSize: 20,
+  headerFont: {
+    // fontSize: 20,
   },
 });
 
