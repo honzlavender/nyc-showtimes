@@ -6,6 +6,8 @@ import MovieView from './MovieView';
 import moment from 'moment';
 import WavyBorder from '../assets/svg/WavyBorder';
 import {ThemeContext, themes} from '../../theme/theme';
+import { ThemeToggle } from '../components/ThemeToggle';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 // const {theme, toggleTheme} = useContext(ThemeContext);
 interface HomeProps {}
@@ -19,10 +21,10 @@ const Home: FC<HomeProps> = () => {
   const {data: theaterData} = getAllTheaters();
 
   return (
-    <View style={styles().container}>
-      <Text style={styles().date}>{moment(todaysDate).format('LL')}</Text>
-      <TouchableOpacity style={styles().button} onPress={toggleScreen}>
-        <Text style={styles().buttonText}>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.date}>{moment(todaysDate).format('LL')}</Text>
+      <TouchableOpacity style={styles.button} onPress={toggleScreen}>
+        <Text style={styles.buttonText}>
           {isMovieScreen ? 'movies' : 'theaters'}
         </Text>
       </TouchableOpacity>
@@ -33,12 +35,13 @@ const Home: FC<HomeProps> = () => {
           <Text>this will be the theater sort view</Text>
         </View>
       )}
-    </View>
+    </SafeAreaView>
   );
 };
 
-const styles = (themes?: string) => StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
+    // flex: 1
     // marginTop: 50,
     // alignItems: 'center',
   },
