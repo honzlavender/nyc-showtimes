@@ -1,18 +1,15 @@
 import React, {FC, useContext, useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Button, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {getMovieShowtimes} from '../hooks/getMovieShowtimes';
 import {getAllTheaters} from '../hooks/getAllTheaters';
 import MovieView from './MovieView';
 import moment from 'moment';
-import WavyBorder from '../assets/svg/WavyBorder';
-import {ThemeContext, themes} from '../../theme/theme';
-import { ThemeToggle } from '../components/ThemeToggle';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import {SafeAreaView} from 'react-native-safe-area-context';
+interface HomeProps {
+  navigation: any;
+}
 
-// const {theme, toggleTheme} = useContext(ThemeContext);
-interface HomeProps {}
-
-const Home: FC<HomeProps> = () => {
+const Home: FC<HomeProps> = ({navigation}) => {
   const [isMovieScreen, setIsMovieScreen] = useState(true);
   const toggleScreen = () => {
     setIsMovieScreen(!isMovieScreen);
@@ -22,47 +19,49 @@ const Home: FC<HomeProps> = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.date}>{moment(todaysDate).format('LL')}</Text>
-      <TouchableOpacity style={styles.button} onPress={toggleScreen}>
-        <Text style={styles.buttonText}>
-          {isMovieScreen ? 'movies' : 'theaters'}
-        </Text>
-      </TouchableOpacity>
-      {isMovieScreen ? (
-        <MovieView theaterData={theaterData} movieData={movieData} />
-      ) : (
-        <View>
-          <Text>this will be the theater sort view</Text>
-        </View>
-      )}
+      <Text style={styles.date}>
+        {moment(todaysDate).format('LL').toLocaleLowerCase()}
+      </Text>
+      <MovieView navigation={navigation} />
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1
-    // marginTop: 50,
     // alignItems: 'center',
   },
   date: {
-    // fontSize: 20,
-    // fontWeight: 'bold',
-    // margin: 16,
+    fontSize: 20,
+    fontWeight: 'bold',
+    margin: 16,
+    color: '#24302A',
   },
   button: {
-    // backgroundColor: 'brown',
-    // padding: 10,
-    // borderRadius: 5,
-    // alignItems: 'center',
-    // marginHorizontal: 100,
-    // marginBottom: 20,
+    backgroundColor: '#A82D1A',
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+    marginHorizontal: 100,
+    marginBottom: 20,
   },
   buttonText: {
-    // color: '#fff',
-    // fontSize: 16,
-    // fontWeight: 'bold',
+    color: '#F0DBC8',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
 
 export default Home;
+// <TouchableOpacity style={styles.button} onPress={toggleScreen}>
+//   <Text style={styles.buttonText}>
+//     {isMovieScreen ? 'movies' : 'theaters'}
+//   </Text>
+// </TouchableOpacity>
+// {isMovieScreen ? (
+//   <MovieView navigation={navigation} />
+// ) : (
+//   <View>
+//     <Text>this will be the theater sort view</Text>
+//   </View>
+// )}

@@ -1,5 +1,6 @@
 import React, {FC, useState} from 'react';
 import {
+  Button,
   ImageBackground,
   StyleSheet,
   Text,
@@ -16,6 +17,7 @@ interface AccordionProps {
   chosenMovie: any;
   setChosenMovie: any;
   movieDetails: MovieDetails[];
+  navigation: any;
 }
 
 const Accordion: FC<AccordionProps> = ({
@@ -24,13 +26,14 @@ const Accordion: FC<AccordionProps> = ({
   index,
   chosenMovie,
   setChosenMovie,
+  navigation,
   movieDetails,
 }) => {
   const isOpen = chosenMovie === index;
   const toggleItem = () => {
     setChosenMovie(chosenMovie === index ? null : index);
   };
-const image = movieDetails.map(url => url.posterImageUrl)
+  const image = movieDetails.map(url => url.posterImageUrl);
 
   const body = (
     <ImageBackground source={{uri: image[0]}}>
@@ -52,7 +55,6 @@ const styles = StyleSheet.create({
   container: {
     // justifyContent: 'center'
     // borderWidth: 1,
-
   },
   image: {
     // flex: 1,

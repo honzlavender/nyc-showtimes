@@ -1,15 +1,21 @@
 import React, {FC, useState} from 'react';
 import {Movie, Showtime, TheaterDetails} from '../hooks/types';
-import {FlatList, Text, View} from 'react-native';
+import {Button, FlatList, Text, View} from 'react-native';
 import {width} from '../utils/utils';
+// import Accordion from '../components/Accordion';
+import {getMovieShowtimes} from '../hooks/getMovieShowtimes';
+import {getAllTheaters} from '../hooks/getAllTheaters';
 import Accordion from '../components/Accordion';
 
 interface MovieProps {
-  theaterData: TheaterDetails[];
-  movieData: Movie[];
+  // theaterData: TheaterDetails[];
+  // movieData: Movie[];
+  navigation: any;
 }
 
-const MovieView: FC<MovieProps> = ({theaterData, movieData}) => {
+const MovieView: FC<MovieProps> = ({navigation}) => {
+  const {movies: movieData, todaysDate} = getMovieShowtimes();
+  const {data: theaterData} = getAllTheaters();
   const [chosenMovie, setChosenMovie] = useState(false);
 
   const combineObjects = (
@@ -99,7 +105,7 @@ const MovieView: FC<MovieProps> = ({theaterData, movieData}) => {
     });
   });
   const dataToRender = Object.values(formattedData);
-
+  
   return (
     <FlatList
       data={dataToRender}
@@ -114,6 +120,7 @@ const MovieView: FC<MovieProps> = ({theaterData, movieData}) => {
             chosenMovie={chosenMovie}
             setChosenMovie={setChosenMovie}
             movieDetails={[item.movieDetails]}
+            navigation={navigation}
           />
         );
       }}
@@ -122,3 +129,16 @@ const MovieView: FC<MovieProps> = ({theaterData, movieData}) => {
 };
 
 export default MovieView;
+
+// <Button
+//   title={'header'}
+//   onPress={() => navigation.push('Accordion', {
+//     header: item.movieName,
+//     theaterInfo: item.theaters,
+//     index,
+//     chosenMovie,
+//     setChosenMovie,
+//     movieDetails: item.movieDetails,
+//     navigation
+//   })}
+// />

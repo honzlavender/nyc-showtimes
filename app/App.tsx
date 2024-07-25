@@ -1,21 +1,32 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native';
 import Home from './src/screens/Home';
-import {ThemeProvider} from './theme/ThemeProvider';
-import {ThemeToggle} from './src/components/ThemeToggle';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {LightTheme} from './theme/theme';
+import MovieView from './src/screens/MovieView';
+import Accordion from './src/components/Accordion';
+import {Movie, MovieDetails, TheaterDetails} from './src/hooks/types';
+import {getMovieShowtimes} from './src/hooks/getMovieShowtimes';
 
-const Stack = createNativeStackNavigator();
+export type RootStackParamList = {
+  Home: undefined;
+  Accordion: undefined;
+};
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const App = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={LightTheme}>
       <Stack.Navigator>
         <Stack.Screen
           name="Home"
           component={Home}
+          options={{headerShown: false}}
         />
+        {/* <Stack.Screen
+          name="Accordion"
+          component={Accordion}
+        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
