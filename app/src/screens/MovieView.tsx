@@ -1,11 +1,14 @@
 import React, {FC, useState} from 'react';
 import {Movie, Showtime, TheaterDetails} from '../hooks/types';
-import {Button, FlatList, Text, View} from 'react-native';
+import {
+  FlatList,
+  Pressable,
+  StyleSheet,
+  Text,
+} from 'react-native';
 import {width} from '../utils/utils';
-// import Accordion from '../components/Accordion';
 import {getMovieShowtimes} from '../hooks/getMovieShowtimes';
 import {getAllTheaters} from '../hooks/getAllTheaters';
-import Accordion from '../components/Accordion';
 
 interface MovieProps {
   // theaterData: TheaterDetails[];
@@ -16,7 +19,30 @@ interface MovieProps {
 const MovieView: FC<MovieProps> = ({navigation}) => {
   const {movies: movieData, todaysDate} = getMovieShowtimes();
   const {data: theaterData} = getAllTheaters();
-  const [chosenMovie, setChosenMovie] = useState(false);
+  // const [chosenMovie, setChosenMovie] = useState(false);
+  const colors = [
+    //trolls
+    // 'green',
+    // '#7025B5',
+    // '#155DC1',
+    // '#F0CE0B',
+    // '#FE8415',
+    // '#EE0000',
+    //midsommer
+    '#B50102',
+    '#D54D01',
+    '#D99800',
+    '#377856',
+    '#3F5D8F',
+    '#AA2366',
+    //rainbow
+    // "red",
+    // "orange",
+    // "yellow",
+    // "green",
+    // "blue",
+    // "purple",
+  ];
 
   const combineObjects = (
     movies: Movie[],
@@ -105,28 +131,45 @@ const MovieView: FC<MovieProps> = ({navigation}) => {
     });
   });
   const dataToRender = Object.values(formattedData);
-  
+
   return (
     <FlatList
       data={dataToRender}
       snapToAlignment="center"
       snapToInterval={width}
       renderItem={({item, index}) => {
+        const backgroundColor = colors[index % colors.length];
         return (
-          <Accordion
-            header={item.movieName}
-            theaterInfo={item.theaters}
-            index={index}
-            chosenMovie={chosenMovie}
-            setChosenMovie={setChosenMovie}
-            movieDetails={[item.movieDetails]}
-            navigation={navigation}
-          />
+          <Pressable
+            style={{backgroundColor}}
+            onPress={() =>
+              navigation.push('Accordion', {
+                header: item.movieName,
+                theaterInfo: item.theaters,
+                index,
+                movieDetails: item.movieDetails,
+                navigation,
+              })
+            }>
+            <Text style={styles.movieHeader}>
+              {item.movieName.toLocaleLowerCase()}
+            </Text>
+          </Pressable>
         );
       }}
     />
   );
 };
+
+const styles = StyleSheet.create({
+  movieHeader: {
+    marginHorizontal: 18,
+    marginVertical: 18,
+    fontSize: 24,
+    fontWeight: '900',
+    color: 'white',
+  },
+});
 
 export default MovieView;
 
@@ -141,4 +184,13 @@ export default MovieView;
 //     movieDetails: item.movieDetails,
 //     navigation
 //   })}
+// />
+// <Accordion
+//   header={item.movieName}
+//   theaterInfo={item.theaters}
+//   index={index}
+//   chosenMovie={chosenMovie}
+//   setChosenMovie={setChosenMovie}
+//   movieDetails={[item.movieDetails]}
+//   navigation={navigation}
 // />

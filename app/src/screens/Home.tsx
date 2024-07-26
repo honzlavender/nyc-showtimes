@@ -1,56 +1,28 @@
-import React, {FC, useContext, useState} from 'react';
-import {Button, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {getMovieShowtimes} from '../hooks/getMovieShowtimes';
+import React, {FC, useState} from 'react';
+import {StyleSheet,} from 'react-native';
 import {getAllTheaters} from '../hooks/getAllTheaters';
 import MovieView from './MovieView';
-import moment from 'moment';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {RootStackParamList} from '../../App';
 interface HomeProps {
-  navigation: any;
+  // navigation: any;
 }
 
-const Home: FC<HomeProps> = ({navigation}) => {
+const Home: FC<HomeProps> = () => {
+  const navigation =
+    useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+
   const [isMovieScreen, setIsMovieScreen] = useState(true);
   const toggleScreen = () => {
     setIsMovieScreen(!isMovieScreen);
   };
-  const {movies: movieData, todaysDate} = getMovieShowtimes();
   const {data: theaterData} = getAllTheaters();
 
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.date}>
-        {moment(todaysDate).format('LL').toLocaleLowerCase()}
-      </Text>
-      <MovieView navigation={navigation} />
-    </SafeAreaView>
-  );
+  return <MovieView navigation={navigation} />;
 };
 
-const styles = StyleSheet.create({
-  container: {
-    // alignItems: 'center',
-  },
-  date: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    margin: 16,
-    color: '#24302A',
-  },
-  button: {
-    backgroundColor: '#A82D1A',
-    padding: 10,
-    borderRadius: 5,
-    alignItems: 'center',
-    marginHorizontal: 100,
-    marginBottom: 20,
-  },
-  buttonText: {
-    color: '#F0DBC8',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-});
+const styles = StyleSheet.create({});
 
 export default Home;
 // <TouchableOpacity style={styles.button} onPress={toggleScreen}>

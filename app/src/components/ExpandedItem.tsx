@@ -42,9 +42,8 @@ const styles = StyleSheet.create({
     marginVertical: 24,
   },
   content: {
-    // flex: 0.4,
     width: '80%',
     borderWidth: 2,
-    backgroundColor: '#ffffff50'
+    backgroundColor: '#ffffff90'
   },
 });
